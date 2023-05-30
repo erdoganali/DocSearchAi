@@ -1,0 +1,635 @@
+Getting Started
+•	Visualize Nedir?
+Visualize, kullanıcılara sürükle – bırak arayüzlerle hızlı ve kolay kullanıma başlama imkanı veren maliyet odaklı veri görselleştirme platformudur.
+Excel/Csv dahil olmak üzere birçok farklı  kaynaktan veri çekme opsiyonu bulunmaktadır. İhtiyaç duyulan kaynaktan veri çekildikten sonra, çeşitli grafik, tablo ve haritalar yardımıyla interactive dashboard’lar oluşturularak verilerin görsel olarak anlamlı hale getirilmesi sağlanmaktadır.
+NAVIGATION
+•	Ana Sayfa Kullanım Detaları
+Veri Modeli Nedir ?
+Bir veri modeli, farklı veri öğeleri arasındaki mantıksal ilişkileri ve veri akışını ifade eder. Ayrıca verilerin depolanma ve alınma şeklini de belgeler. Veri modelleri hangi verilerin gerekli olduğunu ve farklı iş süreçleri için hangi formatın kullanılacağını temsil etmeye yardımcı olur.
+
+ Panel Nedir ?
+Panel bilinen bir diğer adıyla Dashboard, bilgi akışını ve/veya içeriğini özetlemek amacıyla kullanılan, grafikler ve tablolar yoluyla belirli bir durumu açıklamaya yarayan gösterge ekranını (veya iş panosu, görtergeler tablosu) ifade eder. Amacı en kısa sürede, en az etkileşim ve düşünme gereksinimi ile gerekli olan bilginin sunulmasıdır.
+
+Veri Modeli & Panel Listeleme
+- Kullanıcının yetki sahibi olduğu tüm veri modeli ve paneller yukarıdaki görselde **Tümü** sekmesi altında yer alırken, **veri modeli** ve **panel** sekmelerinde ayrı ayrı listeleme işlemi yapılmaktadır.
+- Kullanıcının  son kullandığı 30 veri modeli ve panel **Son Kullanılanlar** sekmesinde yer almaktadır.
+- Veri modeli ve panel kartları üzerindeki yıldız sembollerine tıklanarak ilgili kart favorilenebilmektedir. Favorilenen veri modeli ve paneller **Favoriler** sekmesi altında listelenmektedir.
+Veri Modeli & Panel Kart Menüleri
+
+- Yukarıda görüldüğü üzere veri modeli ve panel kartları üzerinde bulunan 3 noktaya tıklanıldığında çeşitli işlemlerin yapılabileceği menu açılmaktadır. Menü sekmelerinin detayları şu şekildedir;
+- **Düzenle** sekmesi veri modeli ve panel’i edit ekranına yönlendirmektedir.
+- **Paylaş** sekmesi sayfanın en sağında veri modeli ve panellere yetki verilmesini sağlayan ekranı açmaktadır.
+- **Özellikler** sekmesi sayfanın sağında veri modeli ve panel’in genel bilgilerinin yer aldığı menüyü açmaktadır.
+- **Koplaya** sekmesi ilgili veri modeli ve panel’in kopyasını yaratmaktadır.
+- **Sil** sekmesi ilgili veri modeli ve paneli silmektedir.
+## Veri Modeli ve Panel Menülerine Giriş
+- [Ana sayfa görselinde](#_NAVIGATION) sol üst tarafta renklendirilmiş olarak gösterilen butonlar veri modeli ve panel menülerine girişi sağlamaktadır.
+## Yönetim Paneli & Bildirim Menüsü
+- [Ana sayfa görselinde](#_NAVIGATION) sağ üstü köşede yan yana bildirim ikonu ve admin sayfası yer almaktadır.
+- Büyük boyutlu excel/csv dosyalarının indirme işlemi süresince bildirim ikonu güncellenmektedir.
+- Veritabanı bağlantısı sırasında kullanılacak bağlantı bilgileri Yönetim Paneli sekmesinde girilmektedir.
+## Veri Modeli & Panel Arama Seçenekleri
+- [Ana sayfa görselinde](#_NAVIGATION) sağ alt köşede veri modeli ve panel aramayı kolaylaştıran araçlar bulunmaktadır.
+- Arama kısmında veri modeli ve panel isminde arama yapmayı sağlamaktadır.
+- Arama kısmının yanındaki ikon ile çeşitli durumlara göre sıralama yapılmasını sağlamaktadır.
+- Sıralama butonunun yanındaki ikon veri modeli ve panellerin liste halinde görüntülenmesini sağlamaktadır.
+- En son buton ise panel ve veri modellerinin tam ekran görüntülenmesini sağlamaktadır.
+Connecting Your Data
+Veritabanına Bağlantısı Tanımlama
+•	- Visualize, kullanıcılarına veritabanına direkt bağlantı ve kendi lokal veri tabanları üzerinden bağlantı seçeneği sunmaktadır. Veri tabanı bağlantısı dışında excel/csv dosyaları  lokal veritabanına yüklenerek görselleştirmek üzere kullanılabilmektedir.
+
+•	- Visualize aşağıdaki veritabanlarına direkt bağlantı yapılarak veri modeli oluşturulmasını sağlamaktadır.
+
+
+
+
+•	- Sistemde ilgili veritabanına bağlantı sağlamak için öncelikle [Ana Ekran Yönlendirmeler](#_ana-ekran-yönlendirmeler) bölümündeki **Yönetim Paneli & Bildirim Menüsü”** kısmında anlatılmış olan Yönetim Paneli ekranına giriş yapılır.
+•	- Gelen ekrandaki sistemde tanımlı bağlantılar yer almaktadır.
+•	- Yeni veritabanı bağlantısı yaratmak için yukarıdaki görseldeki sarı ile belirtilmiş olan **Bağlantı Oluştur** butonuna tıklanır. Bağlantı bilgilerini girmek üzere aşağıdaki ekran gelmektedir.
+Bu alanların detayları şu şekildedir:
+- __Ad :__ Bağlantı için verilecek isim.
+- __Açıklama :__ Eklenecek detay bilgi. Zorunlu alan değildir.
+- __Tür :__ Bağlantı Tipi
+- __Host :__ Bağlantı server IP adresi
+- __Port :__ Bağlantı server port numarası
+- __DSN Servis Adı :__ Bağlanılacak şema veya tablo adı
+- **Kullanıcı Adı :** Veritabanında yetki verilmiş kullanıcı adı
+- **Şifre :** Yetki verilmiş kullanıcı şifresi
+- Bilgiler girildikten sonra bağlantı kurulup kurulmadığını test etmek için “Test Bağlantısı” butonu kullanılmaktadır.
+Creating DataModels
+Datamodel Overview
+Panel oluştururken kullanılacak veri modelinin oluşturulduğu kısımdır. Veri modeli oluşturulmadan önce kullanılacak veritabanının bağlantı bilgileri sisteme tanımlanmış olmalıdır.
+2 şekilde veri modeli oluşturulabilir.
+1.	Lokal bilgisayarda yer alan herhangi bir csv dosyası sisteme yüklenerek veri modeli içerisinde kullanılabilmektedir.
+2.	Oracle,MS SQL, Postgre SQL ve Clickhouse gibi farklı veritabanlarına direkt bağlanıp gerekli sql query’leri yazılarak veri modeli içerisinde kullanılabilmektedir.
+Veri modeli Nasıl Oluşturulur?
+
+•	Ana sayfadaki Veri Modeli sekmesine tıklanır.
+•	Gelen sayfanın en sağ üst kısmında yer alan “Yeni Veri Seti” butonu tıklanır. Butona tıklandığında gelen pop-up ekranında verinin nasıl elde edileceğine dair 2 opsiyon yer almaktadır. Detayları şu şekildedir:
+o	Dosya Yükle: Bilgisayarda yer alan csv dosyaları sisteme yüklenerek, Panel hazırlanabilir.
+o	Veritabanına Bağlan: Herhangi bir veritabanına bağlanarak veri çekmek için kullanılmaktadır. Sistem Oracle, MSSql,ClickHouse ve PostgreSql veritabanlarını desteklemektedir. Veritabanı bağlantısı için “Veritabanına Bağlan” butonuna tıklandıktan sonra kullanılacak bağlantı tipi seçilir.
+1)	Veritabanına bağlanarak Veri Modeli Oluşturma
+•	Yukarıdaki “Veritabanına Bağlan” sekmesine tıklanır.
+•	Gelen ekranda kullanılacak veritabanı seçilir. Sayfa, elde edilecek verinin query’sinin hazırlandığı aşağıdaki ekrana yönlenmiş olur.
+
+•	Yukarıdaki Sql derleme ekranı, veritabanı bağlantısı yapılan yazılımın Sql kullanım kurallarına çalışmaktadır. Yazılan kodların çıktılarının raporlarda veriseti olarak kullanılmasını sağlamaktadır.
+•	Yazılan kodun çıksını görebilmek için Sql Editor ekranının sağ üst köşesindeki oynatma butonuna tıklanır. Yukarıdaki ekranda gözüktüğü gibi veriler listelenecektir.
+•	Sql editor’de gerekli query oluşturulduktan sonra sayfanın sağ üst köşesindeki Ad kısmına verisetinin ismi girilerek Sql editor’ün sağ üst köşesindeki kayıt butonu ile veriseti kayıt edilir.
+•	Veri seti kayıt edildikten sonra veri ağacının listelendiği aşağıdaki sayfaya yönlenecektir.
+
+•	Son adım olarak oluşan veriseti sayfanın sağ üst köşesinden kayıt edilmesi gerekmektedir.
+Custom Filter & Security Filter Kullanımı
+a.	Security Filters
+•	Sql Editörde yazılan query, raporu görüntüleyecek kullanıcının LDAP bilgilerine göre filtrelenebilirmektedir. Bunun için yukarıdaki görselin solunda yer alan hazır Security filters (LDAP filtreleri) kullanılmaktadır. Aşağıda filtrelerin query içerisinde nasıl kullanılabileceğine dair örnek kod parçası yer almaktadır. Bu kod ilgili tablodaki create_user kolonunda raporu görüntüleyen kullanıcının LDAP kullanıcı adının geçtiği satırların otomatik filtrelenmesini sağlamaktadır. Filtreyi sql query’e eklemek için sadece üzerinde tıklamak yeterlidir.
+Select * from sales where create_user= :username
+
+b.	Custom Filters
+•	Bu filtre tipi yazılan query’leri uygulama ara yüzünden satır bazlı filtrelemek için kullanılmaktadır. Yukarıdaki ekranda yer alan “Özel Filtreler” sekmesi datamodeldeki her bir kolona özel filtre yaratılmasını sağlamaktadır. “Özel Filtreler” altındaki “Filtre Ekle ” butonuna tıklandığında aşağıdaki pop-up açılmaktadır. Bu alanların detayları aşağıda yer almaktadır:
+
+
+•	Ad: İlgili filtreye verilecek isim.
+•	Tür: METİN,SAYI,BOOLEAN ve TARİH olmak üzere 4 farklı veri tipi içermektedir. Filtrelenecek kolonun türüne göre yapılmalıdır.
+•	Çoklu Seçim: İlgili özel filtre ile hazırlanacak filtrede sadece tek bir değer mi yoksa birden çok değer mi filtrelenebileceğini göstermektedir. Örneğin country bilgisi ile bir filtre oluşturulduğunda eğer multi select seçilirse Germany, Sweeden... gibi birden çok değer filtrelenebilir. Çoklu seçim seçilmezse sadece tek bir ülke filtrelenebilir.
+•	Zorunluluk: Zorunluluk “Evet” seçildiğinde ilgili filtre değer girmeden çalıştırılamaz.
+•	Varsayılan Değer: Filtredeki varsayılan değeri belirler. Girilmesi zorunlu değildir.
+Bu değerler girilerek bir filtre oluşturulduğunda LDAP filtresinde olduğu gibi query içerisinde kullanılmaktadır. Örneğin sales tablosundaki product kolonunu filtrelemek için prd isimli özel filtre oluşturduğumuzda, query içerisinde aşağıdaki gibi kullanılır. Filter param içeren bir query önizleme yapıldığında test değerleri girilmesi gerekmektedir.
+•	Özel Filtreler ön izleme yapılırken aşağıda olduğu gibi örnek verilmesi gerekmektedir. Veriler tek tırnak arasına girilmelidir. Aşağıda örnek olarak Employee Gender kolonuna ait veride Female değeri bulunmaktadır. Ön izleme yaparken 'Female' şeklinde giriş yapılmıştır.
+
+Veri Ağacı Yapısı
+•	Veri ağacı oluştuktan sonra her bir kolon üzerinde bazı düzenlemeler yapılabilmektedir.
+•	Veri Modeli oluştuktan sistemin yönlendirdiği sayfanın solunda tüm kolonların listelendiği veri ağacı yer almaktadır. Alanların sağ tarafında yer alan 3 nokta tıklandığında aşağıdaki pop-up çıkmaktadır. Burada yer alan özellikler ile fieldların birçok özelliği değiştirilebilmektedir. Verimodelinde güncellenen alanlar dashboard’da kullanılan veri modeline güncel hali ile yansımaktadır.
+
+•	Alanların Detayları şu şekildedir:
+o	Yeniden Adlandır: İlgili alanın ismini değiştirmektedir.
+o	Kullanıcı İpucu: İlgili alanın üzerine gelindiğinde gözükmesi istenen detay varsa bu kısımda kayıt edilir.
+o	Açıklama: İlgili alana dair detaylı bilgi girilmesini sağlamaktadır.
+o	Kullanım Tipi: İlgili alanın dashboardda nasıl kullanılacağını ifade etmektedir. Eğer attribute seçilirse raporda gruplanacak kolon olarak kullanılacağını ifade ederi. Eğer measure seçilirse raporda sum,avg,min,max,count gibi fonksiyon değerlerini döndürmek için kullanılacağını ifade eder. Eğer Date seçilirse attribute ile benzer bir kullanımı ifade etmektedir.
+o	Açıklama: İlgili alana dair detaylı bilgi girilmesini sağlamaktadır.
+o	Özetleme Kuralı: Alanın usage type bilgisine göre
+o	Yeni Hesaplama:
+o	Format: Usage Type measure ve date olan veriler için formatlama işlemi yapar.
+o	Filtre: Veri modelinin filtrelenmesini sağlamaktadır.
+o	Grup:
+o	Detaylandırma Sıralaması :
+o	Kopyala :
+o	Gizle :
+Rol Yönetimi ve Yetkilendirme
+1)	Rol Yönetimi
+Visualize’da Veri Modeli,Panel ve Admin ekranlarının kullanımının filtrelenmesi aşağıda belirlenen 5 rol ile sağlanmaktadır. Roller kullanıcı veya gruplara atanarak kullanıcıların uygulama üzerinde erişebileceği kısımlar belirlenmektedir. Sistemde Rol ataması KeyCloak üzerinden sağlanmaktadır.
+Admin:
+•	Uygulama üzerindeki tüm ekranlara (veri modeli,panel,yönetim) erişim sağlayabilirler.
+•	Yeni bir veri modeli ve panel oluşturabilirler.
+•	Kendi oluşturmadığı fakat üzerine atanmış veri modeli ve paneller varsa atandığı yetkiye göre sadece görüntüleyebilirler veya güncelleme ve silme yetkilerine sahip olabilirler. Bu yetkilerin detayları aşağıdaki “PANEL&VERİ MODELİ Yetkilendirme” kısmında açıklanacaktır.
+DatamodelEditor:
+•	Uygulamanın Veri Modeli geliştirme ekranlarına giriş yapabilirler. Burada yeni bir Veri Modeli geliştirme yetkisine sahiptirler.
+•	Üzerine atanan Veri Modellerinin atandığı yetkiye göre, sadece görüntüleyebilirler veya güncelleme ve silme yetkilerine sahip olabilirler.
+DatamodelViewer:
+•	Uygulamanın Veri Modeli geliştirme ekranlarına giriş yetkileri yoktur.
+•	Sadece üzerilerine atanan Veri Modelleri görüntüleme yetkisine sahiptirler.
+DashboardEditor:
+•	Uygulamanın Panel geliştirme ekranlarına giriş yapabilirler. Burada yeni bir Panel geliştirme yetkisine sahiptirler.
+•	Üzerine atanan Panellerin atandığı yetkiye göre, sadece görüntüleyebilirler veya güncelleme ve silme yetkilerine sahip olabilirler.
+DashboardViewer:
+•	Uygulamanın Panel geliştirme ekranlarına giriş yetkileri yoktur.
+•	Sadece üzerilerine atanan Panelleri görüntüleme yetkisine sahiptirler.
+Panel & Veri Modeli Yetkilendirme
+Birinci bölümde kullanıcıların hangi yetki çerçevesinde uygulamanın bileşenlerine erişebileceğini belirlenirken, bu kısımda veri modeli ve panel özelinde yetkilendirmenin nasıl yapılacağı anlatılacaktır. Bir panel'in görüntülenmesi, kullanıcıya atanan panel yetkileri ve ilgili panelin veri kaynağı olarak kullandığı veri modelinin yetkisi birlikte sağlanmaktadır. Veri modeli ve panellerin alabileceği yetkiler aşağıdaki gibidir.
+Veri Modeli Yetkileri
+•	Deny: Atandığı kullanıcının veya grubun ilgili veri modeline erişiminin engellenmesini sağlamaktadır.
+•	Owner: Veri modeli oluşturan kişinin yetkisi otomatik olarak owner atanmaktadır. Bir Veri Modelinin sadece bir ownerı olabilir. Owner yetkisine sahip kişi Veri Modeli üzerinde tüm yetkilere sahip olmakla birlikte ek olarak Veri Modelini başka kullanıcılara atayabilmektedir. Ownerlığını başka kullanıcıya atadığında ilgili Veri Modeli üzerindeki yetkisi otomatik “Read” olarak güncellenmektedir.
+•	Source(Read): İlgili kullanıcının ilgili Veri Modeli yeni yarattığı Panel içerisinde source olarak kullanmasını sağlar. İlgili Veri Modeli üzerinde güncelleme yapılamaz.
+•	Run: Bir Paneli görüntüleyebilmek için gerekli minimum Veri modeli yetkisidir. Kullanıcıya herhangi bir Panel atandığında Panelin veri kaynağı olan Veri modeli üzerinde de otomatik “Run” yetkisi tanımlanır. Run yetkisindeki Veri modelleri kullanıcıların ekranlarında listelenmez.
+•	Write: İlgili kullanıcının ilgili Veri modeli üzerinde her türlü güncelleme işlemi yapabilmesini sağlar.
+Datamodel Obje Yetkileri	Owner>Write >Read>Run>Deny
+	Read	Edit	Save As	Save	Change Permissions
+Owner					
+Write					
+Read					
+Run					
+
+Panel Yetkileri
+•	Deny: Atandığı kullanıcının veya grubun ilgili Panel'e erişiminin engellenmesini sağlamaktadır.
+•	Owner: Paneli oluşturan kişinin yetkisi otomatik olarak owner atanmaktadır. Bir Panel'in sadece bir ownerı olabilir. Owner yetkisine sahip kişi Panel üzerinde tüm yetkilere sahip olmakla birlikte ek olarak Panel'i başka kullanıcılara atayabilmektedir. Kullanıcının ownerlığını başka kullanıcıya atadığında ilgili Panel üzerindeki yetkisi otomatik “Read” olarak güncellenmektedir.
+•	Read: İlgili kullanıcıya ilgili Panel üzerinde sadece görüntüleme yetkisi verir.
+•	Write: İlgili kullanıcıya ilgili Panel üzerinde düzenleme yapma yetkisi verir. Yapılan düzenleme sonrasında orjinal Panel’ın güncellenmesine izin verir.
+•	Edit: İlgili kullanıcıya ilgili Panel üzerinde düzenleme yapma yetkisi verir. Yapılan düzenleme sonrasında orjinal Panel’in güncellenmesine izin vermez. Sadece üzerinde çalışılan Panel güncellenip yeni bir Panel olarak kaydedilebilir.
+Dashboard Obje Yetkileri	Owner>Write>Edit>Read>Deny
+	Read	Edit	Save As	Save	Change Permissions
+Owner					
+Write					
+Edit				
+Read					
+
+
+
+
+
+
+
+
+
+
+
+
+
+Veri Modeli & Panel Kullanıcı Yetki Ataması Nasıl Yapılır?
+
+Panel ve veri modellerinin kullanıcılara atanması, uygulamının ana sayfasından yapılmaktadır. Ana sayfada Veri Modeli&Panel kartlarının üstüne tıklandığında “Paylaş” sekmesi seçildiğinde yukarıdaki görselin en sağındaki yetkilendirme kısmı açılmaktadır. Yetki verme işlemi için gerekli adımlar aşağıda belirtilmiştir.
+•	Yetki atama görevini sadece ilgili Veri Modeli veya Panelin owner’ı yapabilmektedir.
+•	“Kullanıcı veya Grup ara” kısmında yetki verilmek istenen grup veya kullanucı aratılıp “+” butonuna basıldığında, eğer Veri Modeline yetki veriliyorsa otomatik “Run” yetkisi atanır. Eğer Panele yetki veriliyorsa Panele otomatik “Read” yetkisi atanırken, Panelin veri kaynağı olan Veri Modeline otomatik ”Run” yetkisi atanır.
+•	Eğer varsayılan roller değiştirilmek isteniyorsa ilgili kullanıcın yanındaki rol listesinden seçim yapılarak güncellenir. Örneğin yukarıdaki görsel’de burcu kullanıcısı yanında yetkisi “Read” olarak gözükmektedir. Yetki kutusuna tıklandığında tüm roller listelenecektir. Herhangi bir rol seçildiğinde otomatik güncelleniyor olacaktır.
+•	Bir kullanıcıdan veya gruptan atanan roller silinmek isteniyorsa, ilgili kullanıcı veya grubun yetkisinin yanındaki “-” butonuna basmak yeterli olacaktır. Yukarıdaki görselde burcu kullanıcısının yetkisinin yanındaki yuvarlak buton silmeyi sağlamaktadır.
+•	Owner rolüne sahip kullanıcılar kendi rolünü değiştiremezler. Sadece owner yetkisini başkasına atayarak bu rolü devredebilirler.
+Veri Modeli & Panel Hybrid Yetkilendirme Kuralları
+Bir Panel üzerinde yapabilecek işlemler kullanıcı veya grubun rolü, Veri Modeli yetkisi ve Panel yetkisinin ortak kullanımı ile sağlanmaktadır. Aşağıda bu kuralların detayları yer almaktadır.
+Mevcut Bir Panel'i Görüntülemek İçin ;
+•	Rol yönetiminde anlatılmış olan kullanıcı rolleri Admin,Dashboard editor veya Dashboard viewer olması gerekmektedir.
+•	Yukarıdaki rollere sahip kullanıcılar için ilgili Panel'e Read/Write/Edit/Owner rollerinden birisi atanmış olmalıdır.
+•	Kullanıcı rolü ve Panel yetkilerinin uygun olduğu durumlarda son olarak Veri modeli yetkilerine bakılır. İlgili Panel'in içerisindeki Veri Modeli için Run/Source/Write/owner yetkilerinden birisi verilmiş olmalıdır(Panel'e yetki verildiğinde Veri Modeline otomatik ”Run” yetkisi atanır.).
+Mevcut Bir Panel'i Güncellemek İçin ;
+•	Rol yönetiminde anlatılmış olan kullanıcı rolleri Admin veya “Dashboard editor” olması gerekmektedir.
+•	Yukarıdaki rollere sahip kullanıcılar için ilgili Panel'e Write/Edit/owner rollerinden birisi atanmış olmalıdır.
+•	Kullanıcı rolü ve Panel yetkilerinin uygun olduğu durumlarda son olarak Veri Modeli yetkilerine bakılır. İlgili Panel'in içerisindeki Veri Modeli için Source/Write/owner yetkilerinden birisi verilmiş olmalıdır.
+•	Eğer ilgili kullanıcıya Panel Write yetkisi verilmişse orijinal Panel güncellenebilir. Eğer Panel Edit yetkisi verilmişse orijinal Panel değiştiremez. Panel'i düzenleyerek yeni Panel yaratabilir.
+Yeni Bir Panel Yaratmak için ;
+•	Kullanıcı rolleri Admin veya “Dashboard editor” olması gerekmektedir.
+•	Yukarıdaki rollere sahip kullanıcılar için kullanmak istediği Veri Modeli için Read,Write veya owner yetkisi olması gerekmektedir.
+•	Bu iki gereklilik sağlandığında yeni bir Panel oluşturulabilecektir.
+Mevcut bir Veri Modeli düzenlemek ve yeni bir Veri Modeli oluşturmak için ;
+•	Kullanıcı rolleri Admin veya “Datamodel Editor” olması gerekmektedir.
+•	Mevcut bir Veri modeli için yukarıdaki rollere sahip kullanıcılar için ilgili Veri Modeline Write yetkisi atanmış olmalıdır.
+Creating Dashboards
+1.	Panel ekranı Genel Özellikler
+
+Ana sayfadan Panel kısmına tıklandığında yukarıdaki ekran gelmektedir. Ekran detayları şu şekildedir;
+•	Ortadaki 1 numaralı kısım seçilecek Veri Modelini ifade etmektedir.
+•	Sol taraftaki 2 numaralı kısım seçilecek grafik, tablo veya filtre listelerinin olduğu kısmı ifade etmektedir.
+•	Sağdaki 3 numaralı kısımda yan yana 4 ikon bulunmaktadır. Bu ikonların detayları şu şekildedir:
+o	Birinci ikon filtre Panelini açıp kapatmaya yarar. Burası Panel’de yer alan tüm filtreleri göstermektedir.
+o	2.İkon Panel Özellikleri kısmının açılıp kapanmasını sağlamaktadır.
+o	3.İkon Düzenleme Modu ile Görüntüleme Modu arasındaki geçişi yapmaktadır. Panel kayıt edildikten sonra bu ikona basıldığında tam ekran rapor gözükmektedir.
+o	4.İkon kayıt butonudur.
+o	5.Buton ise Panel’den çıkışı sağlamaktadır.
+•	Sağdaki 4. Kısım Panel’in Sekme, grid,sayfa yapısına dair özellikleri ifade etmektedir. Ek olarak genel kısmındaki “filtre panel pozisyonu” özelliği ile filtre panelinin Panel’in üzerinde nerede konumlanacağı belirlenmektedir.
+•	Sol üst köşedeki 5. Kısım ise Panel içerisinde seçilen Veri modeline geçişi sağlamaktadır.
+
+2.	Panel nasıl oluşturulur?
+1.	Ana saydaki Panel sekmesine tıklanarak gelen ekranda kullanılacak Veri Modeli seçilir.
+2.	Veri Modeli seçildikten sonra Sol taraftaki grafik,tablo veya filtrelerin listelendiği araç kutusundan gerekli obje seçilerek Panel üzerinde uygun bir noktada konumlandırılır.
+3.	Objenin üzerindeki kalem işaretine basılarak düzenleme moduna geçilir. Düzenleme modunda her bir bileşen için değişmekle birlikte aşağıdakine benzer bir ekran geliyor olacaktır.
+
+Yukarıdaki ekranın kullanım detayları şu şekildedir:
+•	En solda kullanılan verisetindeki alanların listesi yer almaktadır. Bu alanların her biri sürüklenerek sağda yer alan diktörtgen kutulara bırakılabilmektedir.
+•	Yukarıdaki görselde 4 adet farklı işleve sahip kutu yer almaktadır. Filtre ve Renklendirme kutuları sabit kalmakla birlikte Hesaplama ve Çubuklar kutularının isimleri, aldığı veri tipleri değişebilmektedir.
+•	Filtre kutusuna sürüklenen alan yardımıyla ilgili bileşen filtrelenebilmektedir.
+•	Renklendirme kutusuna eklenen alanlarda farklı renk seçenekleriyle veriyi görebilmemizi sağlar.
+4.	Düzenlemeler yapıldıktan sonra hazırlanan obje kayıt edilir.
+5.	İhtiyaç duyuluyorsa Panel üzerindeki Panel Özellikleri kısmında düzenlemeler yapılır.
+6.	Panel’e isim verilerek kayıt işlemi tamamlanır.
+3.	Araç Kutusu Nedir?
+Panel’in en sol tarafında araç kutusu yer almaktadır.Araç Kutusu altında Panel hazırlarken kullanılabilecek tüm bileşenler yer almaktadır. Bu bileşenler Grafik,Filtre ve Diğer olmak üzere 3 ana gruba ayrılmıştır. Araç kutusundaki tüm bileşenlerin listesi aşağıda yer almaktadır.
+Bileşen Tipi	Bileşen Adı
+Grafik	Sütun Grafiği
+	Yatay Sütun Grafiği
+	Stacked Column Grafiği
+	Stacked Bar
+	Line
+	Area
+	Pie
+	TreeMap
+	Combination
+	HeatMap
+	Scatter
+	Bubble
+	Gauge
+	Table
+	Pivot
+	Summary
+	Radar
+	GeoMap
+Filtre	Text Input
+	Drop Down
+	Select List Filter
+	Calendar
+Diğer	Text
+	Image
+	Button
+
+Sorgu Parametreleri İle Embeded Kullanımı
+Topbar içerisindeki logo, panel ismi, bildirim simgesi ve kullanıcı simgesini url’de verilen query string parametrelerine göre göster veya gizle olarak ayarlama yapabiliriz.
+Sabit URL = dapdev.galaksiya.net
+•	Top Bar içindeki kullanımları özelleştirmek için “dapdev.galaksiya.net?embeded=true ” yazılması gerekmektedir.
+Örnek kullanımlar aşağıdaki gibidir.
+•	Panel içerisinde TOP BAR görünümünü tamamen gizlemek için aşağıdaki parametrenin kullanılması gerekmektedir.
+dapdev.galaksiya.net/dashboard/view/c0a8b00b-8539-13c6-8185-3f398e5201ec?embeded=true&topBar=false
+•	Herhangi bir query parametre yoksa topbar içindeki tüm nesneler ilk halinde görünür durumdadır. Top Bar içerisindeki tüm nesneler gözükecektir.
+dapdev.galaksiya.net?embeded=true&appLogo=true¬ificationMenu=true&profileMenu=true
+•	 Panel ekranında uygulamanın logosunu gizlemek için appLogo=false parametresi eklenmelidir.
+dapdev.galaksiya.net?embeded=true&appLogo=false
+•	 Panel ekranında uygulamanın logosunu ve bildirim ekranını gizlemek için appLogo=false ve notificationMenu=false parametreleri eklenmelidir.
+dapdev.galaksiya.net?embeded=true&appLogo=false¬ificationMenu=false
+•	 Panel ekranında appLogo=false notificationMenu=false profileMenu=false parametreleri eklendiğinde Top Bar içerisinde hiç bir parametre görünmeyecektir.
+dapdev.galaksiya.net?embeded=true&appLogo=false¬ificationMenu=false&profileMenu=false
+•	 Panel ekranında Panel ismini gizlemek için dashboardName=false parametresi eklenmelidir.
+dapdev.galaksiya.net/dashboard/view/c0a8b00b-8539-13c6-8185-3f398e5201ec?embeded=true&appLogo=true&dashboardName=false¬ificationMenu=true&profileMenu=true
+•	 Panel ekranında yalnızca Panel ismi gözükmesi istendiğinde aşağıdaki parametreler eklenmelidir.
+dapdev.galaksiya.net/dashboard/view/c0a8b00b-8539-13c6-8185-3f398e5201ec?embeded=true&appLogo=false&dashboardName=true¬ificationMenu=false&profileMenu=false
+ Panel Düzenleme Ekranı İçin Parametreler
+•	Panel düzenleme ekranında Settings Bar alanını tamamen gizlemek için aşağıdaki parametre kullanılmalıdır.
+dapdev.galaksiya.net/dashboard/view/c0a8b00b-8539-13c6-8185-3f398e5201ec?embeded=true&settingsBar=false
+•	Parametre kullanılmadan öncesinde Settings Bar görüntüsü ;
+•	Parametre eklendikten sonra gizlenen Settings Bar görünümü ;
+•	Aşağıdaki parametre kullanıldığında Settings Bar içerisinde kullanıcının yetkisi varsa sadece düzenleme ikonu gözükecektir. Kullanıcının yetkisi yoksa düzenleme ikonu yetkisi olmadığı için gizlenecektir. Diğer ikonlar ise girilen parametreler ile gizlenecektir.
+dapdev.galaksiya.net/dashboard/view/c0a8b00b-8539-13c6-8185-3f398e5201ec?embeded=true&close=false&resize=false&filter=false
+Dikey Sütun Grafik
+Sütun grafiği, her kategorinin bir dikdörtgenle temsil edildiği ve dikdörtgenin yüksekliğinin çizilen değerlerle orantılı olduğu bir veri görselleştirme şeklidir.
+Dikey Sütun Grafik oluşturulması
+Tüm bileşenler dashboard üzerinde sürükle-bırak mantığı ile konumlandırılmaktadır. Grafik/filtre veya diğer tipteki bir bileşen dashboard’a sürüklenip bırakıldıktan sonra üzerindeki kalem işaretine tıklandığında düzenleme moduna geçilir. Bu moddaki ekran detayları şu şekildedir:
+
+1.	En solda kullanılan verisetindeki alanların listesi yer almaktadır. Bu alanların her biri sürüklenerek sağda yer alan diktörtgen kutulara bırakılabilmektedir.
+2.	Measures kutusuna field üzerinde matematiksel işlem yapılacak alan eklenmektedir. İlgili alan için belirlenen gruplama fonksiyonu otomatik çalışmaktadır. Eğer veri tipi measure ise varsayılan gruplama fonksiyonu toplam’dır. Aşağıdaki gibi diğer seçimler için güncelleme yapılabilir. Eğer veri tipi date veya attribute ise sadece sayı ve tekil sayı gruplama fonksiyonları mevcuttur. İhtiyaca göre aynı şekilde güncellenebilir.
+
+3.	Bars kutusuna gruplama yapılması istenen alan/alanlar sürüklenmektedir.
+4.	Color By sekmesine Renge göre gruplanması istenen alan/alanlar sürüklenmektedir.
+5.	Filters sekmesine sürüklenen alanlar üzerinden verinin filtrelenmesi sağlanmaktadır. Verinin date, attribute ve measure olması durumlarına göre farklı filtreler mevcuttur. Burada herhangi bir filtre eklendiğinde ilgili bileşendeki veri otomatik filtreli çalışmaktadır.
+6.	En sağda sütun grafiğe ait özellekler yer almaktadır. 6 başlıktan oluşmaktadır. Genel detayları şu şekildedir:
+o	Değer Etiketi: Sürunların üzerinde yer alan sayısal değerlerin görünümü ile alakalı düzenlemeleri içermektedir.
+o	Yatay Eksen: X eksen çizgisi,eksen adı ve eksen etiketinin görünümü ile alakalı düzenlemeleri içermektedir.
+o	Dikey Eksen: Y eksen çizgisi,eksen adı,eksen etiketi ve eksen pozisyonu ile alakalı düzenlemeleri içermektedir.
+o	Lejand: Grafik lejantının yazı tipi ile alakalı düzenlemeleri içermektedir.
+o	Renk Paleti: Grafikte kullanılacak renk paletinin seçildiği veya düzenlendiği kısımdır.
+Dikey Sütun Grafik Kullanım Örnekleri
+
+•	Yukarıda sütun grafiğine dair 3 farklı kullanım şekli yer almaktadır. Bunların detayları şu şekildedir:
+o	Yukarıda yer alan grafik sütun grafiğinin en temel kullanım şeklidir. Measure kutusuna “Amount” alanı ve bars kutusuna “product” alanı eklenmiştir. Veri product bazında gruplanmış toplam satış miktarını göstermektedir.
+o	Yukarıda yer alan grafiklerden sol taraftaki grafik 1. Grafikteki measure ve bar kutularına ek olarak color by kutusuna “Year” alanının eklenmesi ile oluşturulmuştur. Veri, ürün ve yıl bazında gruplanmış olup her bir yıla ait değerler farklı renk ile ifade edilmiştir.
+o	Yukarıda yer alan grafiklerden sağ taraftaki grafik measure kutusuna “Amount” alanının ve bars kutusuna product ve year alanlarının eklenmesi ile oluşmuştur. Bu grafik yine product ve year bazında gruplanmış sonuçlatı göstermekte olup, bir öncekinin aksine herhangi bir renklendirme mevcut değildir.
+Yatay Sütun Grafik
+Sütun grafiği, her kategorinin bir dikdörtgenle temsil edildiği ve dikdörtgenin yüksekliğinin çizilen değerlerle orantılı olduğu bir veri görselleştirme şeklidir. Sütun grafiğinin bu çeşidinde sütunlar X eksenine paralel şekilde oluşmaktadır.
+Yatay Sütun Grafik oluşturulması
+Grafik dashboard’a sürüklenip bırakıldıktan sonra üzerindeki kalem işaretine tıklandığında düzenleme moduna geçilir. Bu moddaki ekran detayları şu şekildedir:
+
+1.	En solda kullanılan verisetindeki alanların listesi yer almaktadır. Bu alanların her biri sürüklenerek sağda yer alan diktörtgen kutulara bırakılabilmektedir.
+2.	Measures kutusuna field üzerinde matematiksel işlem yapılacak alan eklenmektedir. İlgili alan için belirlenen gruplama fonksiyonu otomatik çalışmaktadır. Eğer veri tipi measure ise varsayılan gruplama fonksiyonu toplam’dır. Aşağıdaki gibi diğer seçimler için güncelleme yapılabilir. Eğer veri tipi date veya attribute ise sadece sayı ve tekil sayı gruplama fonksiyonları mevcuttur. İhtiyaca göre aynı şekilde güncellenebilir.
+
+3.	Bars kutusuna gruplama yapılması istenen alan/alanlar sürüklenmektedir.
+4.	Color By sekmesine Renge göre gruplanması istenen alan/alanlar sürüklenmektedir.
+5.	Filters sekmesine sürüklenen alanlar üzerinden verinin filtrelenmesi sağlanmaktadır. Verinin date, attribute ve measure olması durumlarına göre farklı filtreler mevcuttur. Burada herhangi bir filtre eklendiğinde ilgili bileşendeki veri otomatik filtreli çalışmaktadır.
+6.	En sağda sütun grafiğe ait özellekler yer almaktadır. 6 başlıktan oluşmaktadır. Genel detayları şu şekildedir:
+o	Değer Etiketi: Sürunların üzerinde yer alan sayısal değerlerin görünümü ile alakalı düzenlemeleri içermektedir.
+o	Yatay Eksen: X eksen çizgisi,eksen adı ve eksen etiketinin görünümü ile alakalı düzenlemeleri içermektedir.
+o	Dikey Eksen: Y eksen çizgisi,eksen adı,eksen etiketi ve eksen pozisyonu ile alakalı düzenlemeleri içermektedir.
+o	Lejand: Grafik lejantının yazı tipi ile alakalı düzenlemeleri içermektedir.
+o	Renk Paleti: Grafikte kullanılacak renk paletinin seçildiği veya düzenlendiği kısımdır.
+Yatay Sütun Grafik Kullanım Örnekleri
+
+•	Yukarıda sütun grafiğine dair 3 farklı kullanım şekli yer almaktadır. Bunların detayları şu şekildedir:
+o	Yukarıda yer alan grafik sütun grafiğinin en temel kullanım şeklidir. Measure kutusuna “Amount” alanı ve bars kutusuna “product” alanı eklenmiştir. Veri product bazında gruplanmış toplam satış miktarını göstermektedir.
+o	Yukarıda yer alan grafiklerden sol taraftaki grafik 1. Grafikteki measure ve bar kutularına ek olarak color by kutusuna “Year” alanının eklenmesi ile oluşturulmuştur. Veri, ürün ve yıl bazında gruplanmış olup her bir yıla ait değerler farklı renk ile ifade edilmiştir.
+o	Yukarıda yer alan grafiklerden sağ taraftaki grafik measure kutusuna “Amount” alanının ve bars kutusuna product ve year alanlarının eklenmesi ile oluşmuştur. Bu grafik yine product ve year bazında gruplanmış sonuçlatı göstermekte olup, bir öncekinin aksine herhangi bir renklendirme mevcut değildir.
+Çizgi Grafik
+Çizgi grafiği yatay ve düşey eksendeki sürekliliği olan verilerin değerlerini işaretleyerek, bu işaretli olan noktaların düz çizgiler ile birleştirilmesi neticesinde ortaya çıkan grafik türüdür.
+Çizgi Grafik oluşturulması
+Grafik dashboard'a sürüklenip bırakıldıktan sonra üzerindeki kalem işaretine tıklandığında düzenleme moduna geçilir. Bu moddaki ekran detayları şu şekildedir:
+
+1.	En solda kullanılan verisetindeki alanların listesi yer almaktadır. Bu alanların her biri sürüklenerek sağda yer alan diktörtgen kutulara bırakılabilmektedir.
+2.	Measures kutusuna field üzerinde matematiksel işlem yapılacak alan eklenmektedir. İlgili alan için belirlenen gruplama fonksiyonu otomatik çalışmaktadır. Eğer veri tipi measure ise varsayılan gruplama fonksiyonu toplam'dır. Aşağıdaki gibi diğer seçimler için güncelleme yapılabilir. Eğer veri tipi date veya attribute ise sadece sayı ve tekil sayı gruplama fonksiyonları mevcuttur. İhtiyaca göre aynı şekilde güncellenebilir.
+
+3.	Points kutusuna gruplama yapılması istenen alan/alanlar sürüklenmektedir.
+4.	Color By sekmesine Renge göre gruplanması istenen alan/alanlar sürüklenmektedir.
+5.	Filters sekmesine sürüklenen alanlar üzerinden verinin filtrelenmesi sağlanmaktadır. Verinin date, attribute ve measure olması durumlarına göre farklı filtreler mevcuttur. Burada herhangi bir filtre eklendiğinde ilgili bileşendeki veri otomatik filtreli çalışmaktadır.
+6.	En sağda çizgi grafiğe ait özellekler yer almaktadır. 6 başlıktan oluşmaktadır. Genel detayları şu şekildedir:
+o	Değer Etiketi: Çizgilerin üzerinde yer alan sayısal değerlerin görünümü ile alakalı düzenlemeleri içermektedir.
+o	Yatay Eksen: X eksen çizgisi, eksen adı ve eksen etiketinin görünümü ile alakalı düzenlemeleri içermektedir.
+o	Dikey Eksen: Y eksen çizgisi, eksen adı, eksen etiketi ve eksen pozisyonu ile alakalı düzenlemeleri içermektedir.
+o	Lejant: Grafik lejantının yazı tipi ile alakalı düzenlemeleri içermektedir.
+o	Renk Paleti: Grafikte kullanılacak renk paletinin seçildiği veya düzenlendiği kısımdır.
+Çizgi Grafik Kullanım Örnekleri
+
+•	Yukarıda sütun grafiğine dair 3 farklı kullanım şekli yer almaktadır. Bunların detayları şu şekildedir:
+o	Yukarıda yer alan çizgi grafiğinin en temel kullanım şeklidir. Measure kutusuna "Amount" alanı ve points kutusuna "product" alanı eklenmiştir. Veri product bazında gruplanmış toplam satış miktarını göstermektedir.
+o	Yukarıda yer alan grafiklerden sağ taraftaki grafik 1. Grafikteki measure ve points kutularına ek olarak color by kutusuna "Year" alanının eklenmesi ile oluşturulmuştur. Veri, ürün ve yıl bazında gruplanmış olup her bir yıla ait değerler farklı renk ile ifade edilmiştir.
+o	Yukarıda yer alan grafiklerden alt kısımda kalan grafik measure kutusuna "Amount" alanının ve points kutusuna product ve year alanlarının eklenmesi ile oluşmuştur. Bu grafik yine product ve year bazında gruplanmış sonuçları göstermekte olup, bir öncekinin aksine herhangi bir renklendirme mevcut değildir.
+Pasta Grafiği
+Elde bulunan verilerin, bir Pastanin dilimlere ayrılarak bu dilimleri içerisinde gösterilmesine Pasta grafiği denmektedir. Özellikle Pasta içerisinde dilimleri ayrılan bölümler farklı renkleri boyanmak suretiyle çok daha etkin şekilde veriler ortaya çıkabilmektedir.
+Pasta Grafiği oluşturulması
+Grafik dashboard'a sürüklenip bırakıldıktan sonra üzerindeki kalem işaretine tıklandığında düzenleme moduna geçilir. Bu moddaki ekran detayları şu şekildedir:
+
+1.	En solda kullanılan verisetindeki alanların listesi yer almaktadır. Bu alanların her biri sürüklenerek sağda yer alan diktörtgen kutulara bırakılabilmektedir.
+2.	Measures kutusuna field üzerinde matematiksel işlem yapılacak alan eklenmektedir. İlgili alan için belirlenen gruplama fonksiyonu otomatik çalışmaktadır. Eğer veri tipi measure ise varsayılan gruplama fonksiyonu toplam'dır. Aşağıdaki gibi diğer seçimler için güncelleme yapılabilir. Eğer veri tipi date veya attribute ise sadece sayı ve tekil sayı gruplama fonksiyonları mevcuttur. İhtiyaca göre aynı şekilde güncellenebilir.
+
+3.	Slices kutusuna gruplama yapılması istenen alan/alanlar sürüklenmektedir. Slices kutusuna eklenen alan içerikleri renklerine göre gruplanarak gösterilir.
+4.	Filters sekmesine sürüklenen alanlar üzerinden verinin filtrelenmesi sağlanmaktadır. Verinin date, attribute ve measure olması durumlarına göre farklı filtreler mevcuttur. Burada herhangi bir filtre eklendiğinde ilgili bileşendeki veri otomatik filtreli çalışmaktadır.
+5.	En sağda çizgi grafiğe ait özellekler yer almaktadır. 6 başlıktan oluşmaktadır. Genel detayları şu şekildedir:
+o	Değer Etiketi: Pastalerin yanında yer alan sayısal değerlerin görünümü ile alakalı düzenlemeleri içermektedir.
+o	Yatay Eksen: X eksen çizgisi, eksen adı ve eksen etiketinin görünümü ile alakalı düzenlemeleri içermektedir.
+o	Dikey Eksen: Y eksen çizgisi, eksen adı, eksen etiketi ve eksen pozisyonu ile alakalı düzenlemeleri içermektedir.
+o	Lejant: Grafik lejantının yazı tipi ile alakalı düzenlemeleri içermektedir.
+o	Renk Paleti: Grafikte kullanılacak renk paletinin seçildiği veya düzenlendiği kısımdır.
+Pasta Grafiği Kullanım Örnekleri :
+
+•	Yukarıda yer alan Pasta grafiğinin en temel kullanım şeklidir. Measure kutusuna "Amount" alanı ve Slices kutusuna "product" alanı eklenmiştir. Veri product bazında gruplanmış farklı renklerle toplam satış miktarını göstermektedir.
+•	Aşağıda yer alan grafiklerden sağ taraftaki grafik 1. Grafikteki slices kutusuna ek olarak "Year" alanının eklenmesi ile oluşturulmuştur. Veri, ürün ve yıl bazında gruplanmış olup her bir yıla ait değerler farklı renk ile ifade edilmiştir.
+•	Aşağıda yer alan grafiklerden sol taraftaki grafik measure kutusuna "Amount" alanının ve Slices kutusuna product, year ve create by alanlarının eklenmesi ile oluşmuştur. Bu grafik yine product , year ve create by bazında gruplanmış sonuçları göstermekte olup, her bir değer farklı renklerle gösterilmiştir.
+Birleşik Grafik
+Birleşik grafiği, çubuk grafiğin ve çizgi grafiğin özelliklerini birleştiren bir görselleştirmedir. Birleşik tablosu, her biri belirli bir kategoriyi temsil eden bir dizi çubuk ve/veya çizgi kullanarak verileri görüntüler.
+Grafik dashboard’a sürüklenip bırakıldıktan sonra üzerindeki kalem işaretine tıklandığında düzenleme moduna geçilir. Bu moddaki ekran detayları şu şekildedir:
+
+1.	En solda kullanılan verisetindeki alanların listesi yer almaktadır. Bu alanların her biri sürüklenerek sağda yer alan diktörtgen kutulara bırakılabilmektedir.
+2.	Bars kutusuna sütun şeklinde gözükmesi istenen alan .eklenmektedir. Üzerinde matematiksel işlem yapılacak alanlar eklendiğinde, ilgili alan için belirlenen gruplama fonksiyonu otomatik çalışmaktadır. Eğer veri tipi measure ise varsayılan gruplama fonksiyonu toplam’dır. Aşağıdaki gibi diğer seçimler için güncelleme yapılabilir. Eğer veri tipi date veya attribute ise sadece sayı ve tekil sayı gruplama fonksiyonları mevcuttur. İhtiyaca göre aynı şekilde güncellenebilir.
+
+3.	Lines kutusuna, grafik üzefrinde çizgi şeklinde gözükmesi istenen alan eklenmektedir.
+4.	X-Axis kutusuna gruplama yapılması istenen alan/alanlar sürüklenmektedir.
+5.	Color By sekmesine Renge göre gruplanması istenen alan/alanlar sürüklenmektedir.
+6.	Filters sekmesine sürüklenen alanlar üzerinden verinin filtrelenmesi sağlanmaktadır. Verinin date, attribute ve measure olması durumlarına göre farklı filtreler mevcuttur. Burada herhangi bir filtre eklendiğinde ilgili bileşendeki veri otomatik filtreli çalışmaktadır.
+7.	En sağda combination grafiğe ait özellekler yer almaktadır. 6 başlıktan oluşmaktadır. Genel detayları şu şekildedir:
+o	Değer Etiketi: Dairelerin yanında yer alan sayısal değerlerin görünümü ile alakalı düzenlemeleri içermektedir.
+o	Yatay Eksen: X eksen çizgisi, eksen adı ve eksen etiketinin görünümü ile alakalı düzenlemeleri içermektedir.
+o	Dikey Sütun Eksen: Y eksen üzerinde oluşan sütun, eksen adı, eksen etiketi ve eksen pozisyonu ile alakalı düzenlemeleri içermektedir.
+o	Dikey Çizgi Eksen: Y eksen üzerinde oluşan çizgi, eksen adı, eksen etiketi ve eksen pozisyonu ile alakalı düzenlemeleri içermektedir.
+o	Lejant: Grafik lejantının yazı tipi ile alakalı düzenlemeleri içermektedir.
+o	Renk Paleti: Grafikte kullanılacak renk paletinin seçildiği veya düzenlendiği kısımdır.
+Birleşik Grafiği Kullanım Örnekleri :
+
+•	Sol tarafta yer alan görsel birleşik grafiğinin en temel kullanım şeklidir. Bars kutusuna “Amount” alanı, Lines kutusuna “product” alanı ve X-Axis kutusuna “Create_By” alanı eklenmiştir. Veri Create_By bazında gruplanmıştır.
+•	Sağ tarafta yer alan görsel için ; Bars kutusuna “Amount” alanı, Lines kutusuna “product” alanı ve X-Axis kutusuna “Year” alanı eklenmiştir. Ek olarak Color By kutusuna “Create_By” alanı eklenmiştir. Veri “Year” bazında gruplanmıştır ve her bir kişiye ait değerler farklı renk ile ifade edilmiştir.
+Dağılım Grafiği
+Dağılım diyagramı, iki farklı değişkenin arasındaki ilişkiyi belirlemek için kullanılır. Aralarındaki ilişkinin sebebi görülemese de, ilgili iki değişkenin arasında direkt olarak bir ilişki bulunup bulunmadığı ve bu ilişkinin ne derece güçlü olduğu görülebilir.
+Grafik dashboard’a sürüklenip bırakıldıktan sonra üzerindeki kalem işaretine tıklandığında düzenleme moduna geçilir. Bu moddaki ekran detayları şu şekildedir:
+
+1.	En solda kullanılan verisetindeki alanların listesi yer almaktadır. Bu alanların her biri sürüklenerek sağda yer alan diktörtgen kutulara bırakılabilmektedir.
+2.	Points kutusuna gruplama yapılması istenen alan/alanlar sürüklenmektedir. Üzerinde matematiksel işlem yapılacak alanlar eklendiğinde, ilgili alan için belirlenen gruplama fonksiyonu otomatik çalışmaktadır. Eğer veri tipi measure ise varsayılan gruplama fonksiyonu toplam’dır. Aşağıdaki gibi diğer seçimler için güncelleme yapılabilir. Eğer veri tipi date veya attribute ise sadece sayı ve tekil sayı gruplama fonksiyonları mevcuttur. İhtiyaca göre aynı şekilde güncellenebilir.
+3.	X Axis kutusuna grafik üzerinde X ekseninde gösterilecek noktaların belirleneceği alan/alanlar sürüklenmektedir.
+4.	Y Axis kutusuna grafik üzerinde X ekseninde gösterilecek noktaların belirleneceği alan/alanlar sürüklenmektedir.
+5.	Color By sekmesine Renge göre gruplanması istenen alan/alanlar sürüklenmektedir.
+6.	Filters sekmesine sürüklenen alanlar üzerinden verinin filtrelenmesi sağlanmaktadır. Verinin date, attribute ve measure olması durumlarına göre farklı filtreler mevcuttur. Burada herhangi bir filtre eklendiğinde ilgili bileşendeki veri otomatik filtreli çalışmaktadır.
+7.	En sağda Dağılım grafiğe ait özellekler yer almaktadır. 4 başl7.ıktan oluşmaktadır. Genel detayları şu şekildedir:
+o	Yatay Eksen: X eksen çizgisi, eksen adı ve eksen etiketinin görünümü ile alakalı düzenlemeleri içermektedir.
+o	Dikey Eksen: Y eksen çizgisi, eksen adı, eksen etiketi ve eksen pozisyonu ile alakalı düzenlemeleri içermektedir.
+o	Lejant: Grafik lejantının yazı tipi ile alakalı düzenlemeleri içermektedir.
+o	Renk Paleti: Grafikte kullanılacak renk paletinin seçildiği veya düzenlendiği kısımdır.
+Dağılım Grafiği Kullanım Örneği :
+
+•	Dağılım Grafiği örneğinde Points kutusuna “Amount” alanı, X Axis kutusuna “Country” alanı ve Y-Axis kutusuna “City” alanı eklenmiştir. Ek olarak Color By kutusuna “Year” alanı eklenmiştir. Veri Amount bazında gruplanmıştır ve her bir ülkeye ait değerler farklı renk ile ifade edilmiştir.
+Gösterge Grafiği
+Kadran veya hızölçer tablosu olarak da bilinen gösterge tablosu, verilerin tek bir değerini nicel bir şekilde görüntülemek için kullanılan bir veri görselleştirme türüdür. Gösterge grafikleri, renkli bir veri aralığı kullanarak, kullanıcıların bir KPI'nın belirlenen bir hedefe göre ilerlemesini anlamalarını sağlar.
+Grafik dashboard’a sürüklenip bırakıldıktan sonra üzerindeki kalem işaretine tıklandığında düzenleme moduna geçilir. Bu moddaki ekran detayları şu şekildedir:
+
+1.	En solda kullanılan verisetindeki alanların listesi yer almaktadır. Bu alanların her biri sürüklenerek sağda yer alan diktörtgen kutulara bırakılabilmektedir.
+2.	Measures üzerinde matematiksel işlem yapılacak alanlar eklenmelidir, ilgili alan için belirlenen gruplama fonksiyonu otomatik çalışmaktadır. Eğer veri tipi measure ise varsayılan gruplama fonksiyonu toplam’dır. Aşağıdaki gibi diğer seçimler için güncelleme yapılabilir. Eğer veri tipi date veya attribute ise sadece sayı ve tekil sayı gruplama fonksiyonları mevcuttur. İhtiyaca göre aynı şekilde güncellenebilir.
+3.	Bu örnekte Measures kutusuna Unit Price alanı eklenmiştir. Grafik belirlenen alanın hedefe yaklaşımına göre yeşil, sarı, turuncu, kırmızı olarak renklere ayrılmıştır.
+4.	Min kutusuna grafik üzerinde Minimum değer olarak belirtilmesi istenen alan/alanlar sürüklenmektedir.
+5.	Max kutusuna grafik üzerinde Maximum değer olarak belirtilmesi istenen alan/alanlar sürüklenmektedir.
+6.	Filters sekmesine sürüklenen alanlar üzerinden verinin filtrelenmesi sağlanmaktadır. Verinin date, attribute ve measure olması durumlarına göre farklı filtreler mevcuttur. Burada herhangi bir filtre eklendiğinde ilgili bileşendeki veri otomatik filtreli çalışmaktadır.
+7.	En sağda Gösterge grafiğe ait özellekler yer almaktadır. 5 başlıktan oluşmaktadır. Genel detayları şu şekildedir:
+o	Progress Bar: Hedefin belirtildiği bar çubuğu ile alakalı düzenlemeleri içermektedir.
+o	Başlık: Grafiğin başlığı üzerinde yapılan değişiklikleri içermektedir.
+o	Lejant: Grafik lejantının yazı tipi ile alakalı düzenlemeleri içermektedir.
+o	Değer Etiketi: Dairelerin yanında yer alan sayısal değerlerin görünümü ile alakalı düzenlemeleri içermektedir.
+o	Ayırma Yüzdesi: Yeşil,Sarı,Turuncu,Kırmızı olarak bölünen alanların genişliği,renkleri ile ilgili düzenlemeleri içermektedir.
+Gösterge Grafiği Kullanım Örneği :
+
+•	Bu örnekte, birim fiyatı üzerinden hedefin hangi alanında olduğumuzu görüntülemek istiyoruz. Mümkün olan minimum hedefimiz için Unit Cost alanını belirledik, maksimum hedefimiz içinse Quantity alanını belirledik. Yeşil imleç, Birim Fiyatımızın (Unit Price) minumum hedefimize daha yakın olduğunu gösteriyor.
+Pivot Tablo
+Bir Pivot Tablo, bir tabloda depolanan verileri özetlemek, sıralamak, yeniden düzenlemek, gruplandırmak, saymak, toplam veya ortalama olarak almak için kullanılır. Sütunları satırlara ve satırları sütunlara dönüştürmemizi sağlar. Herhangi bir alana (sütun) göre gruplandırmaya ve bunlar üzerinde gelişmiş hesaplamalar yapmaya izin verir.
+Grafik dashboard’a sürüklenip bırakıldıktan sonra üzerindeki kalem işaretine tıklandığında düzenleme moduna geçilir. Bu moddaki ekran detayları şu şekildedir:
+
+1.	En solda kullanılan verisetindeki alanların listesi yer almaktadır. Bu alanların her biri sürüklenerek sağda yer alan diktörtgen kutulara bırakılabilmektedir.
+2.	Measures üzerinde matematiksel işlem yapılacak alanlar eklenmelidir, ilgili alan için belirlenen gruplama fonksiyonu otomatik çalışmaktadır. Eğer veri tipi measure ise varsayılan gruplama fonksiyonu toplam’dır. Aşağıdaki gibi diğer seçimler için güncelleme yapılabilir. Eğer veri tipi date veya attribute ise sadece sayı ve tekil sayı gruplama fonksiyonları mevcuttur. İhtiyaca göre aynı şekilde güncellenebilir.
+
+3.	Columns kutusuna grafik içeriğinde sütun olarak belirtilmesi istenen alan/alanlar eklenmelidir.
+4.	Rows kutusuna grafik içeriğinde satır olarak belirtilmesi istenen alan/alanlar eklenmelidir.
+5.	Filters sekmesine sürüklenen alanlar üzerinden verinin filtrelenmesi sağlanmaktadır. Verinin date, attribute ve measure olması durumlarına göre farklı filtreler mevcuttur. Burada herhangi bir filtre eklendiğinde ilgili bileşendeki veri otomatik filtreli çalışmaktadır.
+6.	En sağda Pivot Tabloya ait özlleştirebileceğimiz alanları belirten General seçeneği yer almaktadır. Bu seçenek içeriğinden Export, Yazı Stilleri gibi tablo özelleştirme seçenekleri yönetilebilir.
+Pivot Tablo Kullanım Örneği :
+
+•	Bu örnekte sütun olarak ülkeleri satır olarak da şehirleri belirledik. Ülke ve Şehirlerinin birim fiyatına göre gruplandırarak görüntüledik.
+Radar Grafiği
+Bir radar grafiği, veri gruplarının ve farklı özelliklere sahip varlıkların karşılaştırmasını göstermeye yardımcı olur. Çeşitli grupların ve öğelerin özelliklerini aynı noktadan gelen eksenlerde birleştirerek karşılaştırmak için radar çizelgeleri kullanılır. Bir radar grafiği kullanarak farklı parametrelere sahip öğeleri kolayca karşılaştırabilirsiniz. Öğeleri aynı merkezi noktada birleştirir ve kontrastı okuyucuya göstermek için şeffaf gölgeler ve desenler kullanır.
+Grafik dashboard’a sürüklenip bırakıldıktan sonra üzerindeki kalem işaretine tıklandığında düzenleme moduna geçilir. Bu moddaki ekran detayları şu şekildedir:
+
+1.	En solda kullanılan verisetindeki alanların listesi yer almaktadır. Bu alanların her biri sürüklenerek sağda yer alan diktörtgen kutulara bırakılabilmektedir.
+2.	Measures üzerinde matematiksel işlem yapılacak alanlar eklenmelidir, ilgili alan için belirlenen gruplama fonksiyonu otomatik çalışmaktadır. Eğer veri tipi measure ise varsayılan gruplama fonksiyonu toplam’dır. Aşağıdaki gibi diğer seçimler için güncelleme yapılabilir. Eğer veri tipi date veya attribute ise sadece sayı ve tekil sayı gruplama fonksiyonları mevcuttur. İhtiyaca göre aynı şekilde güncellenebilir.
+
+3.	Slices kutusuna gruplama yapılması istenen alan/alanlar sürüklenmektedir.
+4.	Color By sekmesine renge göre gruplanması istenen alan/alanlar sürüklenmektedir.
+5.	Filters sekmesine sürüklenen alanlar üzerinden verinin filtrelenmesi sağlanmaktadır. Verinin date, attribute ve measure olması durumlarına göre farklı filtreler mevcuttur. Burada herhangi bir filtre eklendiğinde ilgili bileşendeki veri otomatik filtreli çalışmaktadır.
+6.	En sağda Radar grafiğe ait özellekler yer almaktadır. 4 başlıktan oluşmaktadır. Genel detayları şu şekildedir:
+o	Değer Etiketi: Dairelerin yanında yer alan sayısal değerlerin görünümü ile alakalı düzenlemeleri içermektedir.
+o	Axis Name: Çizgiler ile belirtilen alanların isimlerinin görünümü ile alakalı düzenlemeleri içermektedir.
+o	Lejant: Grafik lejantının yazı tipi ile alakalı düzenlemeleri içermektedir.
+o	Palette: Grafik üzerinde gösterilen alanların renklerinin düzenlenmesini içermektedir.
+
+Radar Grafiği Kullanım Örneği :
+•	Yukarıda yer alan ilk örnek radar grafiğinin en temel kullanım şeklidir. Measure kutusuna “Amount” alanı ve Slices kutusuna “product” alanı eklenmiştir. Veri product bazında gruplanmış olarak görüntülenmektedir. Color By alanına eklenen Year alanı ile her yıla ait veriler farklı renklerle belirtilmiştir.
+•	Yukarıda yer alan ikinci örnek radar grafiğinin farklı bir örneğidir. Measure kutusuna “Unit Price” alanı ve Slices kutusuna “Weekday” alanı eklenmiştir. Veri Weekday bazında gruplanmış olarak görüntülenmektedir. Color By alanına eklenen Cinsiyet alanı ile kadın ve erkek kategorisindeki veriler farklı renklerle belirtilmiştir.
+Yığın Sütun Grafiği
+Yığın Sütun grafik, zaman içinde göreceli veya mutlak birkaç değişkenin bileşimini ve karşılaştırmasını gösteren bir çubuk grafik biçimidir. Yığın Sütun Grafiği, birbiri üzerine dikey olarak Yığın birkaç sütun serisinden oluşur. Her serinin uzunluğu, her veri noktasındaki değere göre belirlenir.
+Grafik dashboard’a sürüklenip bırakıldıktan sonra üzerindeki kalem işaretine tıklandığında düzenleme moduna geçilir. Bu moddaki ekran detayları şu şekildedir:
+
+1.	En solda kullanılan verisetindeki alanların listesi yer almaktadır. Bu alanların her biri sürüklenerek sağda yer alan diktörtgen kutulara bırakılabilmektedir.
+2.	Measures üzerinde matematiksel işlem yapılacak alanlar eklenmelidir, ilgili alan için belirlenen gruplama fonksiyonu otomatik çalışmaktadır. Eğer veri tipi measure ise varsayılan gruplama fonksiyonu toplam’dır. Aşağıdaki gibi diğer seçimler için güncelleme yapılabilir. Eğer veri tipi date veya attribute ise sadece sayı ve tekil sayı gruplama fonksiyonları mevcuttur. İhtiyaca göre aynı şekilde güncellenebilir.
+
+3.	Bars kutusuna gruplama yapılması istenen alan/alanlar sürüklenmektedir.
+4.	Color By sekmesine Bars alanında renge göre ayrılması istenen alan/alanlar sürüklenmektedir.
+5.	Filters sekmesine sürüklenen alanlar üzerinden verinin filtrelenmesi sağlanmaktadır. Verinin date, attribute ve measure olması durumlarına göre farklı filtreler mevcuttur. Burada herhangi bir filtre eklendiğinde ilgili bileşendeki veri otomatik filtreli çalışmaktadır.
+6.	En sağda Stacked Column grafiğe ait özellekler yer almaktadır. 5 başlıktan oluşmaktadır. Genel detayları şu şekildedir:
+o	Değer Etiketi: Bars alanı üzerinde yer alan sayısal değerlerin görünümü ile alakalı düzenlemeleri içermektedir.
+o	Yatay Eksen: X eksen çizgisi, eksen adı ve eksen etiketinin görünümü ile alakalı düzenlemeleri içermektedir.
+o	Dikey Eksen: Y eksen çizgisi, eksen adı, eksen etiketi ve eksen pozisyonu ile alakalı düzenlemeleri içermektedir.
+o	Lejant: Grafik lejantının yazı tipi ile alakalı düzenlemeleri içermektedir.
+o	Renk Paleti: Grafikte kullanılacak renk paletinin seçildiği veya düzenlendiği kısımdır.
+Yığın Sütun Grafiği Kullanım Örneği :
+
+•	Yukarıda yer alan örnekte Yığın Sütun grafiğinin en temel kullanım şeklidir. Measure kutusuna “Amount” alanı ve Bars kutusuna “product” alanı eklenmiştir. Veri product bazında gruplanmış olarak görüntülenmektedir. Color By alanına eklenen Year alanı ile her yıla ait veriler Bars çubuğunda farklı renklerle belirtilmiştir.
+Yığın Bar Grafiği
+Yığın Bar grafik, zaman içinde göreceli veya mutlak birkaç değişkenin bileşimini ve karşılaştırmasını gösteren bir Bar grafik biçimidir. Yığın Bar Grafiği, birbiri üzerine yatay olarak Yığın birkaç Bar serisinden oluşur. Her serinin uzunluğu, her veri noktasındaki değere göre belirlenir.
+Grafik dashboard’a sürüklenip bırakıldıktan sonra üzerindeki kalem işaretine tıklandığında düzenleme moduna geçilir. Bu moddaki ekran detayları şu şekildedir:
+
+1.	En solda kullanılan verisetindeki alanların listesi yer almaktadır. Bu alanların her biri sürüklenerek sağda yer alan diktörtgen kutulara bırakılabilmektedir.
+2.	Measures üzerinde matematiksel işlem yapılacak alanlar eklenmelidir, ilgili alan için belirlenen gruplama fonksiyonu otomatik çalışmaktadır. Eğer veri tipi measure ise varsayılan gruplama fonksiyonu toplam’dır. Aşağıdaki gibi diğer seçimler için güncelleme yapılabilir. Eğer veri tipi date veya attribute ise sadece sayı ve tekil sayı gruplama fonksiyonları mevcuttur. İhtiyaca göre aynı şekilde güncellenebilir.
+
+3.	Bars kutusuna gruplama yapılması istenen alan/alanlar sürüklenmektedir.
+4.	Color By sekmesine Bars alanında renge göre ayrılması istenen alan/alanlar sürüklenmektedir.
+5.	Filters sekmesine sürüklenen alanlar üzerinden verinin filtrelenmesi sağlanmaktadır. Verinin date, attribute ve measure olması durumlarına göre farklı filtreler mevcuttur. Burada herhangi bir filtre eklendiğinde ilgili bileşendeki veri otomatik filtreli çalışmaktadır.
+6.	En sağda Stacked Bar grafiğe ait özellekler yer almaktadır. 5 başlıktan oluşmaktadır. Genel detayları şu şekildedir:
+o	Değer Etiketi: Bars alanı üzerinde yer alan sayısal değerlerin görünümü ile alakalı düzenlemeleri içermektedir.
+o	Yatay Eksen: X eksen çizgisi, eksen adı ve eksen etiketinin görünümü ile alakalı düzenlemeleri içermektedir.
+o	Dikey Eksen: Y eksen çizgisi, eksen adı, eksen etiketi ve eksen pozisyonu ile alakalı düzenlemeleri içermektedir.
+o	Lejant: Grafik lejantının yazı tipi ile alakalı düzenlemeleri içermektedir.
+o	Renk Paleti: Grafikte kullanılacak renk paletinin seçildiği veya düzenlendiği kısımdır.
+Yığın Bar Grafiği Kullanım Örneği
+
+•	Yukarıda yer alan örnekte Yığın Bar grafiğinin en temel kullanım şeklidir. Measure kutusuna “Amount” alanı ve Bars kutusuna “product” alanı eklenmiştir. Veri product bazında gruplanmış olarak görüntülenmektedir. Color By alanına eklenen Year alanı ile her yıla ait veriler Bars çubuğunda farklı renklerle belirtilmiştir.
+Alan Grafiği
+Alan grafiği, zaman içinde miktarlardaki değişiklikleri göstermek için bir çizgi grafiği ile bir çubuk grafiği birleştiren bir grafiktir. Veri noktalarının çizilmesi ve çizgi parçalarıyla bağlanması bakımından çizgi grafiğine benzer. Ancak, çizginin altındaki alan renkli veya gölgeli olarak gösterilir. Ardından, diğer değerler çizgilerin altına çizilir ve farklı bir renkle gölgelendirilerek katmanları olan bir grafik elde edilir.
+Grafik dashboard’a sürüklenip bırakıldıktan sonra üzerindeki kalem işaretine tıklandığında düzenleme moduna geçilir. Bu moddaki ekran detayları şu şekildedir:
+
+1.	En solda kullanılan verisetindeki alanların listesi yer almaktadır. Bu alanların her biri sürüklenerek sağda yer alan diktörtgen kutulara bırakılabilmektedir.
+2.	Measures üzerinde matematiksel işlem yapılacak alanlar eklenmelidir, ilgili alan için belirlenen gruplama fonksiyonu otomatik çalışmaktadır. Eğer veri tipi measure ise varsayılan gruplama fonksiyonu toplam’dır. Aşağıdaki gibi diğer seçimler için güncelleme yapılabilir. Eğer veri tipi date veya attribute ise sadece sayı ve tekil sayı gruplama fonksiyonları mevcuttur. İhtiyaca göre aynı şekilde güncellenebilir.
+
+3.	Points kutusuna gruplama yapılması istenen alan/alanlar sürüklenmektedir.
+4.	Color By sekmesine renge göre ayrılması istenen alan/alanlar sürüklenmektedir.
+5.	Filters sekmesine sürüklenen alanlar üzerinden verinin filtrelenmesi sağlanmaktadır. Verinin date, attribute ve measure olması durumlarına göre farklı filtreler mevcuttur. Burada herhangi bir filtre eklendiğinde ilgili bileşendeki veri otomatik filtreli çalışmaktadır.
+6.	En sağda Area grafiğe ait özellekler yer almaktadır. 5 başlıktan oluşmaktadır. Genel detayları şu şekildedir:
+o	Değer Etiketi: Points alanı üzerinde yer alan sayısal değerlerin görünümü ile alakalı düzenlemeleri içermektedir.
+o	Yatay Eksen: X eksen çizgisi, eksen adı ve eksen etiketinin görünümü ile alakalı düzenlemeleri içermektedir.
+o	Dikey Eksen: Y eksen çizgisi, eksen adı, eksen etiketi ve eksen pozisyonu ile alakalı düzenlemeleri içermektedir.
+o	Lejant: Grafik lejantının yazı tipi ile alakalı düzenlemeleri içermektedir.
+o	Renk Paleti: Grafikte kullanılacak renk paletinin seçildiği veya düzenlendiği kısımdır.
+Alan Grafiği Kullanım Örneği
+
+•	Yukarıda yer alan örnekte Area grafiğinin en temel kullanım şeklidir. Measure kutusuna “Amount” alanı ve Points kutusuna “product” alanı eklenmiştir. Veri product bazında gruplanmış olarak görüntülenmektedir. Color By alanına eklenen Year alanı ile her yıla ait veriler noktaların birleştiği alanlarda farklı renklerle belirtilmiştir.
+Blok Grafiği
+Blok grafikleri, verileri bir bakışta okunabilen dallar ve alt dallar ile ağaç benzeri bir biçimde gösterir. Ağaç haritaları, büyük miktarda ham veriyi alıp görsel olarak derli toplu ve okunması kolay bir şekilde tasvir etmede kullanılır, kullanıcının kalıpları ayırt etmesine ve hızlı bir şekilde karşılaştırmalar yapmasına olanak tanır.
+Grafik dashboard’a sürüklenip bırakıldıktan sonra üzerindeki kalem işaretine tıklandığında düzenleme moduna geçilir. Bu moddaki ekran detayları şu şekildedir:
+
+1.	En solda kullanılan verisetindeki alanların listesi yer almaktadır. Bu alanların her biri sürüklenerek sağda yer alan diktörtgen kutulara bırakılabilmektedir.
+2.	Measures üzerinde matematiksel işlem yapılacak alanlar eklenmelidir, ilgili alan için belirlenen gruplama fonksiyonu otomatik çalışmaktadır. Eğer veri tipi measure ise varsayılan gruplama fonksiyonu toplam’dır. Aşağıdaki gibi diğer seçimler için güncelleme yapılabilir. Eğer veri tipi date veya attribute ise sadece sayı ve tekil sayı gruplama fonksiyonları mevcuttur. İhtiyaca göre aynı şekilde güncellenebilir.
+
+3.	Branches sekmesine gruplama yapılması ve renge göre ayrılması istenen alan/alanlar sürüklenmektedir.
+4.	Filters sekmesine sürüklenen alanlar üzerinden verinin filtrelenmesi sağlanmaktadır. Verinin date, attribute ve measure olması durumlarına göre farklı filtreler mevcuttur. Burada herhangi bir filtre eklendiğinde ilgili bileşendeki veri otomatik filtreli çalışmaktadır.
+5.	En sağda Radar grafiğe ait özellekler yer almaktadır. 3 başlıktan oluşmaktadır. Genel detayları şu şekildedir:
+o	Değer Etiketi: Çizgilerin yanında yer alan sayısal değerlerin görünümü ile alakalı düzenlemeleri içermektedir.
+o	Lejant: Grafik lejantının yazı tipi ile alakalı düzenlemeleri içermektedir.
+o	Palette: Grafik üzerinde gösterilen alanların renklerinin düzenlenmesini içermektedir.
+Blok Kullanım Örnekleri :
+
+•	Yukarıda yer alan ilk örnek Blok grafiğinin en temel kullanım şeklidir. Measure kutusuna “Amount” alanı ve Branches kutusuna “year” alanı eklenmiştir. Veri Year bazında gruplanmış olarak her yıl farklı renkte olacak şekilde görüntülenmektedir.
+•	Yukarıda yer alan ikinci örnek Blok grafiğinin farklı bir örneğidir. Measure kutusuna “Amount” alanı ve Branches kutusuna “Year,Location,Create By” alanları eklenmiştir. Veri Branches kutusuna eklenen verilere göre gruplanmış olarak görüntülenmektedir.
+Isı Haritası
+Veri değerlerinin renklerle temsil edildiği bir harita veya diyagram biçiminde verilerin grafiksel bir temsilidir.
+Grafik dashboard’a sürüklenip bırakıldıktan sonra üzerindeki kalem işaretine tıklandığında düzenleme moduna geçilir. Bu moddaki ekran detayları şu şekildedir:
+
+1.	En solda kullanılan verisetindeki alanların listesi yer almaktadır. Bu alanların her biri sürüklenerek sağda yer alan diktörtgen kutulara bırakılabilmektedir.
+2.	Measures üzerinde matematiksel işlem yapılacak alanlar eklenmelidir, ilgili alan için belirlenen gruplama fonksiyonu otomatik çalışmaktadır. Eğer veri tipi measure ise varsayılan gruplama fonksiyonu toplam’dır. Aşağıdaki gibi diğer seçimler için güncelleme yapılabilir. Eğer veri tipi date veya attribute ise sadece sayı ve tekil sayı gruplama fonksiyonları mevcuttur. İhtiyaca göre aynı şekilde güncellenebilir.
+
+3.	Columns kutusuna grafik içeriğinde sütun olarak belirtilmesi istenen alan/alanlar eklenmelidir.
+4.	Rows kutusuna grafik içeriğinde satır olarak belirtilmesi istenen alan/alanlar eklenmelidir.
+5.	Filters sekmesine sürüklenen alanlar üzerinden verinin filtrelenmesi sağlanmaktadır. Verinin date, attribute ve measure olması durumlarına göre farklı filtreler mevcuttur. Burada herhangi bir filtre eklendiğinde ilgili bileşendeki veri otomatik filtreli çalışmaktadır.
+6.	En sağda Isı grafiğine ait özellekler yer almaktadır. 5 başlıktan oluşmaktadır. Genel detayları şu şekildedir:
+o	Değer Etiketi: Points alanı üzerinde yer alan sayısal değerlerin görünümü ile alakalı düzenlemeleri içermektedir.
+o	Yatay Eksen: X eksen çizgisi, eksen adı ve eksen etiketinin görünümü ile alakalı düzenlemeleri içermektedir.
+o	Dikey Eksen: Y eksen çizgisi, eksen adı, eksen etiketi ve eksen pozisyonu ile alakalı düzenlemeleri içermektedir.
+o	Visual Map: Artan, azalan renk aralıklarını belirten imleç ile alakalı düzenlemeleri içermektedir.
+o	Lejant: Grafik lejantının yazı tipi ile alakalı düzenlemeleri içermektedir.
+o	Renk Paleti: Grafikte kullanılacak renk paletinin seçildiği veya düzenlendiği kısımdır.
+Isı Haritası Kullanım Örnekleri
+
+•	Yukarıda verilen ilk örnekte Isı Grafiğinin en temel kullanım şeklidir. Columns kutusuna “product” alanı eklenmiştir. Rows kutusuna “Year” alanı eklenmiştir. Veri Product ve Year bazında açıktan koyuya doğru renklendirilerek belirlenmiştir.
+•	Yukarıda verilen ikinci örnekte Isı Grafiğinin detaylandırılmış kullanım şeklidir. Columns kutusuna “Year, Create By” alanları eklenmiştir. Rows kutusuna “Product, Location” alanları eklenmiştir. Veri Sütun ve Satır içerikleri bazında açıktan koyuya doğru renklendirilerek belirtilmiştir.
+
+Tablo
+Tablolar, sütunlar halinde sunulan sayı ve metin listelerinden oluşur. Metindeki sayıların veya listelenmiş verilerin tablo olarak kullanılması, bir tezi veya veriyi daha okunabilir kılmaya yardımcı olur.
+Grafik dashboard’a sürüklenip bırakıldıktan sonra üzerindeki kalem işaretine tıklandığında düzenleme moduna geçilir. Bu moddaki ekran detayları şu şekildedir:
+
+1.	En solda kullanılan verisetindeki alanların listesi yer almaktadır. Bu alanların her biri sürüklenerek sağda yer alan diktörtgen kutulara bırakılabilmektedir.
+2.	Columns kutusuna grafik içeriğinde sütun olarak belirtilmesi istenen alan/alanlar eklenmelidir.
+3.	Sections Kutusuna Columns olarak belirlenen alanların detaylandırılması istenen, alt başlıklara ayrılması istenen alanlar eklenmelidir.
+4.	Filters sekmesine sürüklenen alanlar üzerinden verinin filtrelenmesi sağlanmaktadır. Verinin date, attribute ve measure olması durumlarına göre farklı filtreler mevcuttur. Burada herhangi bir filtre eklendiğinde ilgili bileşendeki veri otomatik filtreli çalışmaktadır.
+5.	En sağda Tabloya ait özlleştirebileceğimiz alanları belirten General seçeneği yer almaktadır. Bu seçenek içeriğinden Export, Yazı Stilleri gibi tablo özelleştirme seçenekleri yönetilebilir. Auto Refresh alanı tablonun otomatik olarak yenilenme süresini ayarlamanızı sağlar.
+Tablo Kullanım Örnekleri :
+
+•	Yukarıda ilk örnek tablo kullanımının en temel kullanım şeklidir. Sütun olarak seçilen “Amount, Product, Year” alanlarının içeriklerini liste formatında görmemizi ve ayırt etmemizi sağlar.
+•	Yukarıda ikinci örnekte tablo kullanımının detaylandırılmış bir örneğidir. Sütun olarak seçilen “Amount, Product, Year” alanlarının içeriklerini liste formatında görebiliyoruz ek olarak Sections kutusuna “Year” alanını eklediğimizde veriyi liste formatı içerisinde yıl bazında bölümlere ayırarak detaylı bir şekilde inceleyebiliriz.
+Özet Grafiği
+Özet Grafiği, verileri sunmak ve özetlemek için kullanılabilen bir grafik türüdür.
+Grafik dashboard’a sürüklenip bırakıldıktan sonra üzerindeki kalem işaretine tıklandığında düzenleme moduna geçilir. Bu moddaki ekran detayları şu şekildedir:
+
+1.	En solda kullanılan verisetindeki alanların listesi yer almaktadır. Bu alanların her biri sürüklenerek sağda yer alan diktörtgen kutulara bırakılabilmektedir.
+2.	Measures üzerinde matematiksel işlem yapılacak alanlar eklenmelidir, ilgili alan için belirlenen gruplama fonksiyonu otomatik çalışmaktadır. Eğer veri tipi measure ise varsayılan gruplama fonksiyonu toplam’dır. Aşağıdaki gibi diğer seçimler için güncelleme yapılabilir. Eğer veri tipi date veya attribute ise sadece sayı ve tekil sayı gruplama fonksiyonları mevcuttur. İhtiyaca göre aynı şekilde güncellenebilir.
+
+3.	Filters sekmesine sürüklenen alanlar üzerinden verinin filtrelenmesi sağlanmaktadır. Verinin date, attribute ve measure olması durumlarına göre farklı filtreler mevcuttur. Burada herhangi bir filtre eklendiğinde ilgili bileşendeki veri otomatik filtreli çalışmaktadır.
+4.	En sağda Özet Tablosuna ait özelleştirebileceğimiz alanları belirten Value seçeneği yer almaktadır. Bu seçenek içeriğinden Yazı Stilleri gibi verilen değer ile ilgili özelleştirme seçenekleri yönetilebilir. Value Label alanında Değer Etiketi için Yazı Stilleri gibi özelleştirme seçenekleri yönetilebilir.
+Özet Grafiği Kullanım Örneği
+
+•	Yukarıdaki ilk örnekte “Amount” alanı Measures kutusuna eklendiğinde Özet gösterimi sağlanmıştır.
+•	Yukarıdaki ikinci örnekte “Amount” alanı Measures kutusuna eklenip ortalama değer seçilmiştir. Ortalama değer için Özet gösterimi belirtilmiştir.
+
+Filtre Bileşenleri
+
+Dashboard üzerindeki grafik ve tabloları filtrelemek için yukarıdaki 4 ana filtre objesi kullanılmaktadır. Her bir obje dashboard üzerine sürükle bırak ile taşınmaktadır.Bu objelerin detayları şu şekildedir:
+Text input
+•	Filtrelenecek değerin kullanıcı tarafından girildiği filtre tipidir.
+•	Birden çok değeri filtrelemek için kelimeler arası “;” eklenmelidir. Aşağıdaki şekilde veri girişi yapılır.
+•
+•	Aşağıdaki 3 özelliği barındırmaktadır.
+o	Mandatory Selection: Filtre kullanımını zorunlu kılar.
+o	Selection Action: Filtrenin butona bağlı çalışmasını sağlar.
+o	Default Value: Dashboard her açıldığında filtrenin bir başlangıç değeri ile çalışmasını sağlar.
+Drop Down List
+•	Filtrelenecek değerin drop down liste içerisinden seçildiği filtre tipidir. Aşağıdaki şekilde veriler listelenmekte ve içerisinden seçim yapımaktadır.
+
+•	Aşağıdaki 4 özelliği barındırmaktadır.
+o	Mandatory Selection: Filtre kullanımını zorunlu kılar.
+o	MultiSelect: Listeden birden çok veri seçilip seçilemeyeceğini belirler.
+o	Selection Action: Filtrenin butona bağlı çalışmasını sağlar.
+o	Default Value: Dashboard her açıldığında filtrenin bir başlangıç değeri ile çalışmasını sağlar.
+Select List
+•	Filtrelenecek değerin listeden seçildiği filtre tipidir. Veriler aşağıdaki gibi listelenmekte olup, bu listeden seçim yapılmaktadır.
+•
+•	Aşağıdaki 5 temel özelliği barındırmaktadır. Bunlara ilave olarak özellikler kısmında, listede gözüken verilerin font detaylarını güncellemeyi sağlayan özellikler mevcuttur.
+o	Mandatory Selection: Filtre kullanımını zorunlu kılar.
+o	MultiSelect: Listeden birden çok veri seçilip seçilemeyeceğini belirler.
+o	Direction: Filtrenin yatay,dikey veya yığılı şekilde görünümünü belirler.
+o	Selection Action: Filtrenin butona bağlı çalışmasını sağlar.
+o	Default Value: Dashboard her açıldığında filtrenin bir başlangıç değeri ile çalışmasını sağlar.
+Calendar
+•	İlgili Dashboard’u tarih tipinde bir değer ile filtrelemek için kullanılır.
+•	Filtreleme işlemi yapılırken tarih seçim ekranı açılır. Burada seçilen tarihe göre dasboard filtrelenmiş olur. Görseli aşağıda yer almaktadır.
+
+•	Aşağıdaki 3 özelliği barındırmaktadır.
+o	Mandatory Selection: Filtre kullanımını zorunlu kılar.
+o	Range: Takvimden tarih aralığı seçmeyi sağlar.
+o	Selection Action: Filtrenin butona bağlı çalışmasını sağlar.
+Diğer Bileşenler
+
+Diğer başlığı altında 3 farklı bileşen tipi mevcuttur. Bunlar dashboard üzerinde kullanım kolaylığı sağlamak veya dashboard’u görsel olarak desteklemek için kullanılar yardımcı bileşenlerdir.
+Text
+Hazırlanan dashboarda aşağıda belirtildiği üzere başlık eklemek amacıyla kullanılmaktadır. Hazırlanan başlığın yazı font’unun tipi,kalınlığı,rengi gibi birçok özellik isteğe göre güncellenebilmektedir.
+
+Image
+Hazırlanan dashboarda ihtiyaç dahilinde görsel,logo vs eklemek amacıyla kullanılmaktadır. Sisteme görseller müşteri talebine istinaden eklenmektedir. Image nesnesi düzenleme modunda iken tanımlı görsellerden biri seçilip kayıt edilir ve dashboardda kullanılır.
+
+Button
+Dashboard’a eklenen filtrelerin butona basıldığında çalışmasını sağlamak amacıyla kullanılmaktadır.
