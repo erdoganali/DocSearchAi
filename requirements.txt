@@ -1,3 +1,5 @@
-pip install dotenv==0.0.1
+pip install dotenv==0.0.5
 pip install langchain==0.0.184
 pip install helper==2.5.0
+pip install chromadb
+pip install openai
