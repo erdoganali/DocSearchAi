@@ -5,11 +5,30 @@ from langchain.document_loaders import TextLoader
 from langchain.embeddings.openai import OpenAIEmbeddings
 import config
 from langchain.llms import AzureOpenAI
-from helper import printPurple, printGreen
+#from helper import printPurple, printGreen
 from langchain.callbacks import get_openai_callback
 
-loader = TextLoader("analiz.txt")
+# create a helper functions   PrintGreen and PrintPurple:
+# Path: helper.py
+from colorama import Fore, Style
+
+
+def printGreen(text):
+    print(Fore.GREEN + text + Style.RESET_ALL)
+
+
+def printPurple(text):
+    print(Fore.MAGENTA + text + Style.RESET_ALL)
+
+# load getting error on this line
+# C:\Users\201493\PycharmProjects\DocSearchAi\analiz.txt
+# loader = TextLoader("analiz.txt")
+file_path = r"C:\Users\201493\PycharmProjects\DocSearchAi\analiz.txt"
+
+loader = TextLoader(file_path, encoding='utf-8')
 documents = loader.load()
+
+ 
 
 text_splitter = CharacterTextSplitter(chunk_size=1000, chunk_overlap=0)
 texts = text_splitter.split_documents(documents)
