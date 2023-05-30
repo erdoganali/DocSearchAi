@@ -1,0 +1,306 @@
+2023-05-29T10:27:29.1353688Z ##[section]Starting: Build solution
+2023-05-29T10:27:29.1849663Z ==============================================================================
+2023-05-29T10:27:29.1850104Z Task         : Visual Studio build
+2023-05-29T10:27:29.1850519Z Description  : Build with MSBuild and set the Visual Studio version property
+2023-05-29T10:27:29.1851187Z Version      : 1.166.2
+2023-05-29T10:27:29.1851526Z Author       : Microsoft Corporation
+2023-05-29T10:27:29.1851958Z Help         : https://docs.microsoft.com/azure/devops/pipelines/tasks/build/visual-studio-build
+2023-05-29T10:27:29.1852467Z ==============================================================================
+2023-05-29T10:27:31.9973133Z ##[command]"C:\agent2\_work\_tasks\VSBuild_71a9a2d3-a98a-4caa-96ab-affca411ecda\1.166.2\ps_modules\MSBuildHelpers\vswhere.exe" -version [16.0,17.0) -latest -format json
+2023-05-29T10:27:32.4963783Z ##[command]"C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin\msbuild.exe" "C:\agent2\_work\7027\s\dv.isbank.ui.sln" /nologo /nr:false /t:"Clean" /dl:CentralLogger,"C:\agent2\_work\_tasks\VSBuild_71a9a2d3-a98a-4caa-96ab-affca411ecda\1.166.2\ps_modules\MSBuildHelpers\Microsoft.TeamFoundation.DistributedTask.MSBuild.Logger.dll";"RootDetailId=720aa123-5b04-45a2-a953-aee5fa29144c|SolutionDir=C:\agent2\_work\7027\s"*ForwardingLogger,"C:\agent2\_work\_tasks\VSBuild_71a9a2d3-a98a-4caa-96ab-affca411ecda\1.166.2\ps_modules\MSBuildHelpers\Microsoft.TeamFoundation.DistributedTask.MSBuild.Logger.dll" /p:DeployOnBuild=true /p:WebPublishMethod=Package /p:PackageAsSingleFile=true /p:SkipInvalidConfigurations=true /p:PackageLocation="C:\agent2\_work\7027\a\\" /p:platform="any cpu" /p:configuration="release" /p:VisualStudioVersion="16.0" /p:_MSDeployUserAgent="TFS_1bdbbdfc-5a4c-472a-ac85-29e0e6735565_build_7901_0"
+2023-05-29T10:27:32.7104191Z Building the projects in this solution one at a time. To enable parallel build, please add the "-m" switch.
+2023-05-29T10:27:32.7900473Z Build started 29.05.2023 13:27:32.
+2023-05-29T10:27:32.9907506Z Project "C:\agent2\_work\7027\s\dv.isbank.ui.sln" on node 1 (Clean target(s)).
+2023-05-29T10:27:32.9915454Z ValidateSolutionConfiguration:
+2023-05-29T10:27:32.9915949Z   Building solution configuration "release|any cpu".
+2023-05-29T10:27:33.5190229Z Project "C:\agent2\_work\7027\s\dv.isbank.ui.sln" (1) is building "C:\agent2\_work\7027\s\dv.isbank.ui\DV.Isbank.UI.csproj" (2) on node 1 (Clean target(s)).
+2023-05-29T10:27:33.5191111Z CoreClean:
+2023-05-29T10:27:33.5191512Z   Creating directory "obj\Release\".
+2023-05-29T10:27:33.5278811Z Done Building Project "C:\agent2\_work\7027\s\dv.isbank.ui\DV.Isbank.UI.csproj" (Clean target(s)).
+2023-05-29T10:27:33.5368182Z Done Building Project "C:\agent2\_work\7027\s\dv.isbank.ui.sln" (Clean target(s)).
+2023-05-29T10:27:33.5390131Z 
+2023-05-29T10:27:33.5390875Z Build succeeded.
+2023-05-29T10:27:33.5394084Z     0 Warning(s)
+2023-05-29T10:27:33.5394865Z     0 Error(s)
+2023-05-29T10:27:33.5396144Z 
+2023-05-29T10:27:33.5397040Z Time Elapsed 00:00:00.75
+2023-05-29T10:27:33.5953558Z ##[command]"C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin\msbuild.exe" "C:\agent2\_work\7027\s\dv.isbank.ui.sln" /nologo /nr:false /dl:CentralLogger,"C:\agent2\_work\_tasks\VSBuild_71a9a2d3-a98a-4caa-96ab-affca411ecda\1.166.2\ps_modules\MSBuildHelpers\Microsoft.TeamFoundation.DistributedTask.MSBuild.Logger.dll";"RootDetailId=6fe605b6-3a43-4e92-a8c2-d7b08eb0fe46|SolutionDir=C:\agent2\_work\7027\s"*ForwardingLogger,"C:\agent2\_work\_tasks\VSBuild_71a9a2d3-a98a-4caa-96ab-affca411ecda\1.166.2\ps_modules\MSBuildHelpers\Microsoft.TeamFoundation.DistributedTask.MSBuild.Logger.dll" /p:DeployOnBuild=true /p:WebPublishMethod=Package /p:PackageAsSingleFile=true /p:SkipInvalidConfigurations=true /p:PackageLocation="C:\agent2\_work\7027\a\\" /p:platform="any cpu" /p:configuration="release" /p:VisualStudioVersion="16.0" /p:_MSDeployUserAgent="TFS_1bdbbdfc-5a4c-472a-ac85-29e0e6735565_build_7901_0"
+2023-05-29T10:27:33.8042339Z Building the projects in this solution one at a time. To enable parallel build, please add the "-m" switch.
+2023-05-29T10:27:33.8821090Z Build started 29.05.2023 13:27:33.
+2023-05-29T10:27:34.0809220Z Project "C:\agent2\_work\7027\s\dv.isbank.ui.sln" on node 1 (default targets).
+2023-05-29T10:27:34.0818162Z ValidateSolutionConfiguration:
+2023-05-29T10:27:34.0818790Z   Building solution configuration "release|any cpu".
+2023-05-29T10:27:34.6049967Z Project "C:\agent2\_work\7027\s\dv.isbank.ui.sln" (1) is building "C:\agent2\_work\7027\s\dv.isbank.ui\DV.Isbank.UI.csproj" (2) on node 1 (default targets).
+2023-05-29T10:27:34.6050863Z PrepareForBuild:
+2023-05-29T10:27:34.6051268Z   Creating directory "bin\Release\".
+2023-05-29T10:27:34.8643579Z ResolveAssemblyReferences:
+2023-05-29T10:27:34.8644247Z   Primary reference "Microsoft.SharePoint".
+2023-05-29T10:27:34.8787852Z ##[warning]C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets(2182,5): Warning MSB3245: Could not resolve this reference. Could not locate the assembly "Microsoft.SharePoint". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors.
+2023-05-29T10:27:34.8801478Z C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets(2182,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "Microsoft.SharePoint". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors. [C:\agent2\_work\7027\s\dv.isbank.ui\DV.Isbank.UI.csproj]
+2023-05-29T10:27:34.8802846Z           For SearchPath "{HintPathFromItem}".
+2023-05-29T10:27:34.8803501Z           Considered "C:\Program Files\Common Files\microsoft shared\Web Server Extensions\16\ISAPI\Microsoft.SharePoint.dll", but it didn't exist.
+2023-05-29T10:27:34.8804161Z           For SearchPath "{TargetFrameworkDirectory}".
+2023-05-29T10:27:34.8804843Z           Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7\Microsoft.SharePoint.winmd", but it didn't exist.
+2023-05-29T10:27:34.8805717Z           Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7\Microsoft.SharePoint.dll", but it didn't exist.
+2023-05-29T10:27:34.8806711Z           Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7\Microsoft.SharePoint.exe", but it didn't exist.
+2023-05-29T10:27:34.8807566Z           Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7\Facades\Microsoft.SharePoint.winmd", but it didn't exist.
+2023-05-29T10:27:34.8808458Z           Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7\Facades\Microsoft.SharePoint.dll", but it didn't exist.
+2023-05-29T10:27:34.8809323Z           Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7\Facades\Microsoft.SharePoint.exe", but it didn't exist.
+2023-05-29T10:27:34.8810236Z           For SearchPath "{AssemblyFoldersFromConfig:C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin\AssemblyFolders.config,v4.7}".
+2023-05-29T10:27:34.8811141Z           Considered "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin\Microsoft.SharePoint.winmd", but it didn't exist.
+2023-05-29T10:27:34.8812002Z           Considered "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin\Microsoft.SharePoint.dll", but it didn't exist.
+2023-05-29T10:27:34.8812848Z           Considered "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin\Microsoft.SharePoint.exe", but it didn't exist.
+2023-05-29T10:27:34.8813798Z           Considered "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\Extensions\Microsoft\SqlDb\Microsoft.SharePoint.winmd", but it didn't exist.
+2023-05-29T10:27:34.8815991Z           Considered "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\Extensions\Microsoft\SqlDb\Microsoft.SharePoint.dll", but it didn't exist.
+2023-05-29T10:27:34.8816927Z           Considered "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\Extensions\Microsoft\SqlDb\Microsoft.SharePoint.exe", but it didn't exist.
+2023-05-29T10:27:34.8818527Z           Considered "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\PublicAssemblies\Microsoft.SharePoint.winmd", but it didn't exist.
+2023-05-29T10:27:34.8819432Z           Considered "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\PublicAssemblies\Microsoft.SharePoint.dll", but it didn't exist.
+2023-05-29T10:27:34.8820306Z           Considered "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\PublicAssemblies\Microsoft.SharePoint.exe", but it didn't exist.
+2023-05-29T10:27:34.8821206Z           Considered "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\ReferenceAssemblies\v4.5\Microsoft.SharePoint.winmd", but it didn't exist.
+2023-05-29T10:27:34.8822111Z           Considered "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\ReferenceAssemblies\v4.5\Microsoft.SharePoint.dll", but it didn't exist.
+2023-05-29T10:27:34.8823002Z           Considered "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\ReferenceAssemblies\v4.5\Microsoft.SharePoint.exe", but it didn't exist.
+2023-05-29T10:27:34.8823943Z           Considered "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VSSDK\VisualStudioIntegration\Common\Assemblies\v4.0\Microsoft.SharePoint.winmd", but it didn't exist.
+2023-05-29T10:27:34.8824990Z           Considered "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VSSDK\VisualStudioIntegration\Common\Assemblies\v4.0\Microsoft.SharePoint.dll", but it didn't exist.
+2023-05-29T10:27:34.8825971Z           Considered "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VSSDK\VisualStudioIntegration\Common\Assemblies\v4.0\Microsoft.SharePoint.exe", but it didn't exist.
+2023-05-29T10:27:34.8826894Z           Considered "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\PublicAssemblies\Microsoft.SharePoint.winmd", but it didn't exist.
+2023-05-29T10:27:34.8827781Z           Considered "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\PublicAssemblies\Microsoft.SharePoint.dll", but it didn't exist.
+2023-05-29T10:27:34.8828641Z           Considered "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\PublicAssemblies\Microsoft.SharePoint.exe", but it didn't exist.
+2023-05-29T10:27:34.8829524Z           Considered "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\ReferenceAssemblies\v4.5\Microsoft.SharePoint.winmd", but it didn't exist.
+2023-05-29T10:27:34.8830428Z           Considered "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\ReferenceAssemblies\v4.5\Microsoft.SharePoint.dll", but it didn't exist.
+2023-05-29T10:27:34.8831307Z           Considered "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\ReferenceAssemblies\v4.5\Microsoft.SharePoint.exe", but it didn't exist.
+2023-05-29T10:27:34.8832354Z           Considered "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\ReferenceAssemblies\v4.0\Microsoft.SharePoint.winmd", but it didn't exist.
+2023-05-29T10:27:34.8833268Z           Considered "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\ReferenceAssemblies\v4.0\Microsoft.SharePoint.dll", but it didn't exist.
+2023-05-29T10:27:34.8834164Z           Considered "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\ReferenceAssemblies\v4.0\Microsoft.SharePoint.exe", but it didn't exist.
+2023-05-29T10:27:34.8835069Z           Considered "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\ReferenceAssemblies\v4.0\Microsoft.SharePoint.winmd", but it didn't exist.
+2023-05-29T10:27:34.8836201Z           Considered "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\ReferenceAssemblies\v4.0\Microsoft.SharePoint.dll", but it didn't exist.
+2023-05-29T10:27:34.8837814Z           Considered "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\ReferenceAssemblies\v4.0\Microsoft.SharePoint.exe", but it didn't exist.
+2023-05-29T10:27:34.8839401Z           Considered "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\ReferenceAssemblies\v2.0\Microsoft.SharePoint.winmd", but it didn't exist.
+2023-05-29T10:27:34.8840476Z           Considered "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\ReferenceAssemblies\v2.0\Microsoft.SharePoint.dll", but it didn't exist.
+2023-05-29T10:27:34.8841398Z           Considered "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\ReferenceAssemblies\v2.0\Microsoft.SharePoint.exe", but it didn't exist.
+2023-05-29T10:27:34.8842343Z           Considered "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VSSDK\VisualStudioIntegration\Common\Assemblies\v2.0\Microsoft.SharePoint.winmd", but it didn't exist.
+2023-05-29T10:27:34.8843319Z           Considered "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VSSDK\VisualStudioIntegration\Common\Assemblies\v2.0\Microsoft.SharePoint.dll", but it didn't exist.
+2023-05-29T10:27:34.8844380Z           Considered "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VSSDK\VisualStudioIntegration\Common\Assemblies\v2.0\Microsoft.SharePoint.exe", but it didn't exist.
+2023-05-29T10:27:34.8845361Z           Considered "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\ReferenceAssemblies\v2.0\Microsoft.SharePoint.winmd", but it didn't exist.
+2023-05-29T10:27:34.8846270Z           Considered "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\ReferenceAssemblies\v2.0\Microsoft.SharePoint.dll", but it didn't exist.
+2023-05-29T10:27:34.8847179Z           Considered "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\ReferenceAssemblies\v2.0\Microsoft.SharePoint.exe", but it didn't exist.
+2023-05-29T10:27:34.8847937Z           For SearchPath "{Registry:Software\Microsoft\.NETFramework,v4.7,AssemblyFoldersEx}".
+2023-05-29T10:27:34.8848490Z           Considered AssemblyFoldersEx locations.
+2023-05-29T10:27:34.8848927Z           For SearchPath "{AssemblyFolders}".
+2023-05-29T10:27:34.8849551Z           Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.0\Microsoft.SharePoint.winmd", but it didn't exist.
+2023-05-29T10:27:34.8850362Z           Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.0\Microsoft.SharePoint.dll", but it didn't exist.
+2023-05-29T10:27:34.8851160Z           Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.0\Microsoft.SharePoint.exe", but it didn't exist.
+2023-05-29T10:27:34.8851944Z           Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\Microsoft.SharePoint.winmd", but it didn't exist.
+2023-05-29T10:27:34.8852747Z           Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\Microsoft.SharePoint.dll", but it didn't exist.
+2023-05-29T10:27:34.8853540Z           Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\Microsoft.SharePoint.exe", but it didn't exist.
+2023-05-29T10:27:34.8854298Z           Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\Microsoft.SharePoint.winmd", but it didn't exist.
+2023-05-29T10:27:34.8855091Z           Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\Microsoft.SharePoint.dll", but it didn't exist.
+2023-05-29T10:27:34.8855800Z           Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\Microsoft.SharePoint.exe", but it didn't exist.
+2023-05-29T10:27:34.8856567Z           For SearchPath "{GAC}".
+2023-05-29T10:27:34.8857039Z           Considered "Microsoft.SharePoint", which was not found in the GAC.
+2023-05-29T10:27:34.8857530Z           For SearchPath "{RawFileName}".
+2023-05-29T10:27:34.8858176Z           Considered treating "Microsoft.SharePoint" as a file name, but it didn't exist.
+2023-05-29T10:27:34.8858689Z           For SearchPath "bin\Release\".
+2023-05-29T10:27:34.8859165Z           Considered "bin\Release\Microsoft.SharePoint.winmd", but it didn't exist.
+2023-05-29T10:27:34.8859736Z           Considered "bin\Release\Microsoft.SharePoint.dll", but it didn't exist.
+2023-05-29T10:27:34.8861260Z           Considered "bin\Release\Microsoft.SharePoint.exe", but it didn't exist.
+2023-05-29T10:27:34.8861827Z   Primary reference "Microsoft.SharePoint.Client.ServerRuntime".
+2023-05-29T10:27:34.8866440Z ##[warning]C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets(2182,5): Warning MSB3245: Could not resolve this reference. Could not locate the assembly "Microsoft.SharePoint.Client.ServerRuntime". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors.
+2023-05-29T10:27:34.8869511Z C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets(2182,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "Microsoft.SharePoint.Client.ServerRuntime". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors. [C:\agent2\_work\7027\s\dv.isbank.ui\DV.Isbank.UI.csproj]
+2023-05-29T10:27:34.8870871Z           For SearchPath "{HintPathFromItem}".
+2023-05-29T10:27:34.8871557Z           Considered "C:\Program Files\Common Files\microsoft shared\Web Server Extensions\16\ISAPI\Microsoft.SharePoint.Client.ServerRuntime.dll", but it didn't exist.
+2023-05-29T10:27:34.8872257Z           For SearchPath "{TargetFrameworkDirectory}".
+2023-05-29T10:27:34.8873447Z           Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7\Microsoft.SharePoint.Client.ServerRuntime.winmd", but it didn't exist.
+2023-05-29T10:27:34.8874445Z           Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7\Microsoft.SharePoint.Client.ServerRuntime.dll", but it didn't exist.
+2023-05-29T10:27:34.8875377Z           Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7\Microsoft.SharePoint.Client.ServerRuntime.exe", but it didn't exist.
+2023-05-29T10:27:34.8876322Z           Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7\Facades\Microsoft.SharePoint.Client.ServerRuntime.winmd", but it didn't exist.
+2023-05-29T10:27:34.8877271Z           Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7\Facades\Microsoft.SharePoint.Client.ServerRuntime.dll", but it didn't exist.
+2023-05-29T10:27:34.8878212Z           Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7\Facades\Microsoft.SharePoint.Client.ServerRuntime.exe", but it didn't exist.
+2023-05-29T10:27:34.8879255Z           For SearchPath "{AssemblyFoldersFromConfig:C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin\AssemblyFolders.config,v4.7}".
+2023-05-29T10:27:34.8880396Z           Considered "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin\Microsoft.SharePoint.Client.ServerRuntime.winmd", but it didn't exist.
+2023-05-29T10:27:34.8881337Z           Considered "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin\Microsoft.SharePoint.Client.ServerRuntime.dll", but it didn't exist.
+2023-05-29T10:27:34.8882255Z           Considered "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin\Microsoft.SharePoint.Client.ServerRuntime.exe", but it didn't exist.
+2023-05-29T10:27:34.8883949Z           Considered "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\Extensions\Microsoft\SqlDb\Microsoft.SharePoint.Client.ServerRuntime.winmd", but it didn't exist.
+2023-05-29T10:27:34.8885121Z           Considered "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\Extensions\Microsoft\SqlDb\Microsoft.SharePoint.Client.ServerRuntime.dll", but it didn't exist.
+2023-05-29T10:27:34.8886115Z           Considered "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\Extensions\Microsoft\SqlDb\Microsoft.SharePoint.Client.ServerRuntime.exe", but it didn't exist.
+2023-05-29T10:27:34.8887082Z           Considered "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\PublicAssemblies\Microsoft.SharePoint.Client.ServerRuntime.winmd", but it didn't exist.
+2023-05-29T10:27:34.8888054Z           Considered "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\PublicAssemblies\Microsoft.SharePoint.Client.ServerRuntime.dll", but it didn't exist.
+2023-05-29T10:27:34.8888999Z           Considered "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\PublicAssemblies\Microsoft.SharePoint.Client.ServerRuntime.exe", but it didn't exist.
+2023-05-29T10:27:34.8889957Z           Considered "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\ReferenceAssemblies\v4.5\Microsoft.SharePoint.Client.ServerRuntime.winmd", but it didn't exist.
+2023-05-29T10:27:34.8890951Z           Considered "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\ReferenceAssemblies\v4.5\Microsoft.SharePoint.Client.ServerRuntime.dll", but it didn't exist.
+2023-05-29T10:27:34.8891932Z           Considered "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\ReferenceAssemblies\v4.5\Microsoft.SharePoint.Client.ServerRuntime.exe", but it didn't exist.
+2023-05-29T10:27:34.8892944Z           Considered "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VSSDK\VisualStudioIntegration\Common\Assemblies\v4.0\Microsoft.SharePoint.Client.ServerRuntime.winmd", but it didn't exist.
+2023-05-29T10:27:34.8893987Z           Considered "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VSSDK\VisualStudioIntegration\Common\Assemblies\v4.0\Microsoft.SharePoint.Client.ServerRuntime.dll", but it didn't exist.
+2023-05-29T10:27:34.8895074Z           Considered "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VSSDK\VisualStudioIntegration\Common\Assemblies\v4.0\Microsoft.SharePoint.Client.ServerRuntime.exe", but it didn't exist.
+2023-05-29T10:27:34.8896077Z           Considered "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\PublicAssemblies\Microsoft.SharePoint.Client.ServerRuntime.winmd", but it didn't exist.
+2023-05-29T10:27:34.8897031Z           Considered "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\PublicAssemblies\Microsoft.SharePoint.Client.ServerRuntime.dll", but it didn't exist.
+2023-05-29T10:27:34.8898159Z           Considered "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\PublicAssemblies\Microsoft.SharePoint.Client.ServerRuntime.exe", but it didn't exist.
+2023-05-29T10:27:34.8899220Z           Considered "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\ReferenceAssemblies\v4.5\Microsoft.SharePoint.Client.ServerRuntime.winmd", but it didn't exist.
+2023-05-29T10:27:34.8900205Z           Considered "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\ReferenceAssemblies\v4.5\Microsoft.SharePoint.Client.ServerRuntime.dll", but it didn't exist.
+2023-05-29T10:27:34.8901422Z           Considered "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\ReferenceAssemblies\v4.5\Microsoft.SharePoint.Client.ServerRuntime.exe", but it didn't exist.
+2023-05-29T10:27:34.8902643Z           Considered "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\ReferenceAssemblies\v4.0\Microsoft.SharePoint.Client.ServerRuntime.winmd", but it didn't exist.
+2023-05-29T10:27:34.8903766Z           Considered "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\ReferenceAssemblies\v4.0\Microsoft.SharePoint.Client.ServerRuntime.dll", but it didn't exist.
+2023-05-29T10:27:34.8904738Z           Considered "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\ReferenceAssemblies\v4.0\Microsoft.SharePoint.Client.ServerRuntime.exe", but it didn't exist.
+2023-05-29T10:27:34.8905710Z           Considered "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\ReferenceAssemblies\v4.0\Microsoft.SharePoint.Client.ServerRuntime.winmd", but it didn't exist.
+2023-05-29T10:27:34.8906673Z           Considered "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\ReferenceAssemblies\v4.0\Microsoft.SharePoint.Client.ServerRuntime.dll", but it didn't exist.
+2023-05-29T10:27:34.8907970Z           Considered "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\ReferenceAssemblies\v4.0\Microsoft.SharePoint.Client.ServerRuntime.exe", but it didn't exist.
+2023-05-29T10:27:34.8908973Z           Considered "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\ReferenceAssemblies\v2.0\Microsoft.SharePoint.Client.ServerRuntime.winmd", but it didn't exist.
+2023-05-29T10:27:34.8909940Z           Considered "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\ReferenceAssemblies\v2.0\Microsoft.SharePoint.Client.ServerRuntime.dll", but it didn't exist.
+2023-05-29T10:27:34.8910912Z           Considered "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\ReferenceAssemblies\v2.0\Microsoft.SharePoint.Client.ServerRuntime.exe", but it didn't exist.
+2023-05-29T10:27:34.8911910Z           Considered "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VSSDK\VisualStudioIntegration\Common\Assemblies\v2.0\Microsoft.SharePoint.Client.ServerRuntime.winmd", but it didn't exist.
+2023-05-29T10:27:34.8912940Z           Considered "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VSSDK\VisualStudioIntegration\Common\Assemblies\v2.0\Microsoft.SharePoint.Client.ServerRuntime.dll", but it didn't exist.
+2023-05-29T10:27:34.8913978Z           Considered "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VSSDK\VisualStudioIntegration\Common\Assemblies\v2.0\Microsoft.SharePoint.Client.ServerRuntime.exe", but it didn't exist.
+2023-05-29T10:27:34.8914986Z           Considered "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\ReferenceAssemblies\v2.0\Microsoft.SharePoint.Client.ServerRuntime.winmd", but it didn't exist.
+2023-05-29T10:27:34.8916234Z           Considered "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\ReferenceAssemblies\v2.0\Microsoft.SharePoint.Client.ServerRuntime.dll", but it didn't exist.
+2023-05-29T10:27:34.8917223Z           Considered "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\ReferenceAssemblies\v2.0\Microsoft.SharePoint.Client.ServerRuntime.exe", but it didn't exist.
+2023-05-29T10:27:34.8918035Z           For SearchPath "{Registry:Software\Microsoft\.NETFramework,v4.7,AssemblyFoldersEx}".
+2023-05-29T10:27:34.8918583Z           Considered AssemblyFoldersEx locations.
+2023-05-29T10:27:34.8919024Z           For SearchPath "{AssemblyFolders}".
+2023-05-29T10:27:34.8919670Z           Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.0\Microsoft.SharePoint.Client.ServerRuntime.winmd", but it didn't exist.
+2023-05-29T10:27:34.8920553Z           Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.0\Microsoft.SharePoint.Client.ServerRuntime.dll", but it didn't exist.
+2023-05-29T10:27:34.8921792Z           Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.0\Microsoft.SharePoint.Client.ServerRuntime.exe", but it didn't exist.
+2023-05-29T10:27:34.8922889Z           Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\Microsoft.SharePoint.Client.ServerRuntime.winmd", but it didn't exist.
+2023-05-29T10:27:34.8923892Z           Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\Microsoft.SharePoint.Client.ServerRuntime.dll", but it didn't exist.
+2023-05-29T10:27:34.8924756Z           Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\Microsoft.SharePoint.Client.ServerRuntime.exe", but it didn't exist.
+2023-05-29T10:27:34.8925581Z           Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\Microsoft.SharePoint.Client.ServerRuntime.winmd", but it didn't exist.
+2023-05-29T10:27:34.8926406Z           Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\Microsoft.SharePoint.Client.ServerRuntime.dll", but it didn't exist.
+2023-05-29T10:27:34.8927199Z           Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\Microsoft.SharePoint.Client.ServerRuntime.exe", but it didn't exist.
+2023-05-29T10:27:34.8927779Z           For SearchPath "{GAC}".
+2023-05-29T10:27:34.8928403Z           Considered "Microsoft.SharePoint.Client.ServerRuntime", which was not found in the GAC.
+2023-05-29T10:27:34.8928960Z           For SearchPath "{RawFileName}".
+2023-05-29T10:27:34.8929954Z           Considered treating "Microsoft.SharePoint.Client.ServerRuntime" as a file name, but it didn't exist.
+2023-05-29T10:27:34.8930774Z           For SearchPath "bin\Release\".
+2023-05-29T10:27:34.8931911Z           Considered "bin\Release\Microsoft.SharePoint.Client.ServerRuntime.winmd", but it didn't exist.
+2023-05-29T10:27:34.8933462Z           Considered "bin\Release\Microsoft.SharePoint.Client.ServerRuntime.dll", but it didn't exist.
+2023-05-29T10:27:34.8934188Z           Considered "bin\Release\Microsoft.SharePoint.Client.ServerRuntime.exe", but it didn't exist.
+2023-05-29T10:27:34.8934750Z   Primary reference "Microsoft.SharePoint.Publishing".
+2023-05-29T10:27:34.8938820Z ##[warning]C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets(2182,5): Warning MSB3245: Could not resolve this reference. Could not locate the assembly "Microsoft.SharePoint.Publishing". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors.
+2023-05-29T10:27:34.8941432Z C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets(2182,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "Microsoft.SharePoint.Publishing". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors. [C:\agent2\_work\7027\s\dv.isbank.ui\DV.Isbank.UI.csproj]
+2023-05-29T10:27:34.8942751Z           For SearchPath "{HintPathFromItem}".
+2023-05-29T10:27:34.8943424Z           Considered "C:\Program Files\Common Files\microsoft shared\Web Server Extensions\16\ISAPI\Microsoft.SharePoint.Publishing.dll", but it didn't exist.
+2023-05-29T10:27:34.8944097Z           For SearchPath "{TargetFrameworkDirectory}".
+2023-05-29T10:27:34.8944859Z           Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7\Microsoft.SharePoint.Publishing.winmd", but it didn't exist.
+2023-05-29T10:27:34.8945764Z           Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7\Microsoft.SharePoint.Publishing.dll", but it didn't exist.
+2023-05-29T10:27:34.8946651Z           Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7\Microsoft.SharePoint.Publishing.exe", but it didn't exist.
+2023-05-29T10:27:34.8947556Z           Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7\Facades\Microsoft.SharePoint.Publishing.winmd", but it didn't exist.
+2023-05-29T10:27:34.8948813Z           Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7\Facades\Microsoft.SharePoint.Publishing.dll", but it didn't exist.
+2023-05-29T10:27:34.8949914Z           Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7\Facades\Microsoft.SharePoint.Publishing.exe", but it didn't exist.
+2023-05-29T10:27:34.8950837Z           For SearchPath "{AssemblyFoldersFromConfig:C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin\AssemblyFolders.config,v4.7}".
+2023-05-29T10:27:34.8951750Z           Considered "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin\Microsoft.SharePoint.Publishing.winmd", but it didn't exist.
+2023-05-29T10:27:34.8952646Z           Considered "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin\Microsoft.SharePoint.Publishing.dll", but it didn't exist.
+2023-05-29T10:27:34.8953529Z           Considered "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin\Microsoft.SharePoint.Publishing.exe", but it didn't exist.
+2023-05-29T10:27:34.8954438Z           Considered "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\Extensions\Microsoft\SqlDb\Microsoft.SharePoint.Publishing.winmd", but it didn't exist.
+2023-05-29T10:27:34.8955401Z           Considered "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\Extensions\Microsoft\SqlDb\Microsoft.SharePoint.Publishing.dll", but it didn't exist.
+2023-05-29T10:27:34.8956525Z           Considered "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\Extensions\Microsoft\SqlDb\Microsoft.SharePoint.Publishing.exe", but it didn't exist.
+2023-05-29T10:27:34.8957466Z           Considered "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\PublicAssemblies\Microsoft.SharePoint.Publishing.winmd", but it didn't exist.
+2023-05-29T10:27:34.8958397Z           Considered "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\PublicAssemblies\Microsoft.SharePoint.Publishing.dll", but it didn't exist.
+2023-05-29T10:27:34.8959320Z           Considered "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\PublicAssemblies\Microsoft.SharePoint.Publishing.exe", but it didn't exist.
+2023-05-29T10:27:34.8960261Z           Considered "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\ReferenceAssemblies\v4.5\Microsoft.SharePoint.Publishing.winmd", but it didn't exist.
+2023-05-29T10:27:34.8961210Z           Considered "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\ReferenceAssemblies\v4.5\Microsoft.SharePoint.Publishing.dll", but it didn't exist.
+2023-05-29T10:27:34.8962160Z           Considered "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\ReferenceAssemblies\v4.5\Microsoft.SharePoint.Publishing.exe", but it didn't exist.
+2023-05-29T10:27:34.8963149Z           Considered "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VSSDK\VisualStudioIntegration\Common\Assemblies\v4.0\Microsoft.SharePoint.Publishing.winmd", but it didn't exist.
+2023-05-29T10:27:34.8964170Z           Considered "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VSSDK\VisualStudioIntegration\Common\Assemblies\v4.0\Microsoft.SharePoint.Publishing.dll", but it didn't exist.
+2023-05-29T10:27:34.8965182Z           Considered "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VSSDK\VisualStudioIntegration\Common\Assemblies\v4.0\Microsoft.SharePoint.Publishing.exe", but it didn't exist.
+2023-05-29T10:27:34.8966238Z           Considered "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\PublicAssemblies\Microsoft.SharePoint.Publishing.winmd", but it didn't exist.
+2023-05-29T10:27:34.8967856Z           Considered "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\PublicAssemblies\Microsoft.SharePoint.Publishing.dll", but it didn't exist.
+2023-05-29T10:27:34.8968788Z           Considered "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\PublicAssemblies\Microsoft.SharePoint.Publishing.exe", but it didn't exist.
+2023-05-29T10:27:34.8969893Z           Considered "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\ReferenceAssemblies\v4.5\Microsoft.SharePoint.Publishing.winmd", but it didn't exist.
+2023-05-29T10:27:34.8970838Z           Considered "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\ReferenceAssemblies\v4.5\Microsoft.SharePoint.Publishing.dll", but it didn't exist.
+2023-05-29T10:27:34.8971774Z           Considered "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\ReferenceAssemblies\v4.5\Microsoft.SharePoint.Publishing.exe", but it didn't exist.
+2023-05-29T10:27:34.8972813Z           Considered "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\ReferenceAssemblies\v4.0\Microsoft.SharePoint.Publishing.winmd", but it didn't exist.
+2023-05-29T10:27:34.8973834Z           Considered "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\ReferenceAssemblies\v4.0\Microsoft.SharePoint.Publishing.dll", but it didn't exist.
+2023-05-29T10:27:34.8974854Z           Considered "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\ReferenceAssemblies\v4.0\Microsoft.SharePoint.Publishing.exe", but it didn't exist.
+2023-05-29T10:27:34.8975777Z           Considered "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\ReferenceAssemblies\v4.0\Microsoft.SharePoint.Publishing.winmd", but it didn't exist.
+2023-05-29T10:27:34.8976722Z           Considered "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\ReferenceAssemblies\v4.0\Microsoft.SharePoint.Publishing.dll", but it didn't exist.
+2023-05-29T10:27:34.8977667Z           Considered "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\ReferenceAssemblies\v4.0\Microsoft.SharePoint.Publishing.exe", but it didn't exist.
+2023-05-29T10:27:34.8978603Z           Considered "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\ReferenceAssemblies\v2.0\Microsoft.SharePoint.Publishing.winmd", but it didn't exist.
+2023-05-29T10:27:34.8979544Z           Considered "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\ReferenceAssemblies\v2.0\Microsoft.SharePoint.Publishing.dll", but it didn't exist.
+2023-05-29T10:27:34.8980475Z           Considered "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\ReferenceAssemblies\v2.0\Microsoft.SharePoint.Publishing.exe", but it didn't exist.
+2023-05-29T10:27:34.8981532Z           Considered "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VSSDK\VisualStudioIntegration\Common\Assemblies\v2.0\Microsoft.SharePoint.Publishing.winmd", but it didn't exist.
+2023-05-29T10:27:34.8982597Z           Considered "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VSSDK\VisualStudioIntegration\Common\Assemblies\v2.0\Microsoft.SharePoint.Publishing.dll", but it didn't exist.
+2023-05-29T10:27:34.8983609Z           Considered "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VSSDK\VisualStudioIntegration\Common\Assemblies\v2.0\Microsoft.SharePoint.Publishing.exe", but it didn't exist.
+2023-05-29T10:27:34.8984580Z           Considered "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\ReferenceAssemblies\v2.0\Microsoft.SharePoint.Publishing.winmd", but it didn't exist.
+2023-05-29T10:27:34.8985521Z           Considered "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\ReferenceAssemblies\v2.0\Microsoft.SharePoint.Publishing.dll", but it didn't exist.
+2023-05-29T10:27:34.8986430Z           Considered "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\ReferenceAssemblies\v2.0\Microsoft.SharePoint.Publishing.exe", but it didn't exist.
+2023-05-29T10:27:34.8987420Z           For SearchPath "{Registry:Software\Microsoft\.NETFramework,v4.7,AssemblyFoldersEx}".
+2023-05-29T10:27:34.8988102Z           Considered AssemblyFoldersEx locations.
+2023-05-29T10:27:34.8988543Z           For SearchPath "{AssemblyFolders}".
+2023-05-29T10:27:34.8989189Z           Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.0\Microsoft.SharePoint.Publishing.winmd", but it didn't exist.
+2023-05-29T10:27:34.8990041Z           Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.0\Microsoft.SharePoint.Publishing.dll", but it didn't exist.
+2023-05-29T10:27:34.8990857Z           Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.0\Microsoft.SharePoint.Publishing.exe", but it didn't exist.
+2023-05-29T10:27:34.8991695Z           Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\Microsoft.SharePoint.Publishing.winmd", but it didn't exist.
+2023-05-29T10:27:34.8992537Z           Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\Microsoft.SharePoint.Publishing.dll", but it didn't exist.
+2023-05-29T10:27:34.8993384Z           Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\Microsoft.SharePoint.Publishing.exe", but it didn't exist.
+2023-05-29T10:27:34.8994173Z           Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\Microsoft.SharePoint.Publishing.winmd", but it didn't exist.
+2023-05-29T10:27:34.8994917Z           Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\Microsoft.SharePoint.Publishing.dll", but it didn't exist.
+2023-05-29T10:27:34.8996000Z           Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\Microsoft.SharePoint.Publishing.exe", but it didn't exist.
+2023-05-29T10:27:34.8996558Z           For SearchPath "{GAC}".
+2023-05-29T10:27:34.8997061Z           Considered "Microsoft.SharePoint.Publishing", which was not found in the GAC.
+2023-05-29T10:27:34.8997569Z           For SearchPath "{RawFileName}".
+2023-05-29T10:27:34.8998095Z           Considered treating "Microsoft.SharePoint.Publishing" as a file name, but it didn't exist.
+2023-05-29T10:27:34.8998764Z           For SearchPath "bin\Release\".
+2023-05-29T10:27:34.8999268Z           Considered "bin\Release\Microsoft.SharePoint.Publishing.winmd", but it didn't exist.
+2023-05-29T10:27:34.8999883Z           Considered "bin\Release\Microsoft.SharePoint.Publishing.dll", but it didn't exist.
+2023-05-29T10:27:34.9000489Z           Considered "bin\Release\Microsoft.SharePoint.Publishing.exe", but it didn't exist.
+2023-05-29T10:27:34.9001127Z   AssemblyFoldersEx location: "{Registry:Software\Microsoft\.NETFramework,v4.7,AssemblyFoldersEx}"
+2023-05-29T10:27:34.9001751Z           C:\Program Files (x86)\Microsoft.NET\Primary Interop Assemblies\
+2023-05-29T10:27:34.9002299Z           C:\Program Files\Reference Assemblies\Microsoft\Workflow Manager\1.0\
+2023-05-29T10:27:34.9002745Z           
+2023-05-29T10:27:34.9003204Z           C:\Program Files\Microsoft SDKs\Azure\.NET SDK\v2.9\bin\plugins\Diagnostics\
+2023-05-29T10:27:34.9003774Z           C:\Program Files\Microsoft SDKs\Azure\.NET SDK\v2.9\ref\Caching\
+2023-05-29T10:27:34.9004403Z           C:\Program Files (x86)\Microsoft Visual Studio\Shared\Visual Studio Tools for Office\PIA\Office15\
+2023-05-29T10:27:34.9005504Z           C:\Program Files (x86)\Microsoft Visual Studio\Shared\Visual Studio Tools for Office\PIA\Office14\
+2023-05-29T10:27:34.9006114Z           C:\Program Files (x86)\Open XML SDK\V2.5\lib
+2023-05-29T10:27:34.9006672Z           C:\Program Files\Reference Assemblies\Microsoft\Microsoft Identity Extensions\1.0\
+2023-05-29T10:27:34.9007247Z           C:\Program Files\Microsoft SDKs\Azure\.NET SDK\v2.9\ref
+2023-05-29T10:27:34.9007991Z           C:\Program Files (x86)\Common Files\Microsoft Shared\MSEnv\\PublicAssemblies
+2023-05-29T10:27:34.9009226Z           C:\Program Files (x86)\Microsoft Chart Controls\Assemblies
+2023-05-29T10:27:34.9817124Z CoreCompile:
+2023-05-29T10:27:34.9821136Z   C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin\Roslyn\csc.exe /noconfig /nowarn:1701,1702 /fullpaths /nostdlib+ /errorreport:prompt /warn:4 /define:TRACE /highentropyva+ /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7\mscorlib.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7\System.ComponentModel.DataAnnotations.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7\System.Core.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7\System.Data.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7\System.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7\System.Drawing.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7\System.Web.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7\System.Web.DynamicData.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7\System.Web.Extensions.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7\System.Xml.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7\System.Xml.Linq.dll" /debug:pdbonly /filealign:512 /keyfile:key.snk /optimize+ /out:"obj\Release\DV.Isbank.UI.dll" /subsystemversion:6.00 /target:library /utf8output /langversion:7.3 BaseLayout.cs BaseMaster.cs "Properties\AssemblyInfo.cs" "obj\Release\.NETFramework,Version=v4.7.AssemblyAttributes.cs"
+2023-05-29T10:27:34.9870025Z   Using shared compilation with compiler from directory: C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin\Roslyn
+2023-05-29T10:27:35.7872385Z ##[error]dv.isbank.ui\BaseLayout.cs(1,17): Error CS0234: The type or namespace name 'SharePoint' does not exist in the namespace 'Microsoft' (are you missing an assembly reference?)
+2023-05-29T10:27:35.7876094Z C:\agent2\_work\7027\s\dv.isbank.ui\BaseLayout.cs(1,17): error CS0234: The type or namespace name 'SharePoint' does not exist in the namespace 'Microsoft' (are you missing an assembly reference?) [C:\agent2\_work\7027\s\dv.isbank.ui\DV.Isbank.UI.csproj]
+2023-05-29T10:27:35.7883341Z ##[error]dv.isbank.ui\BaseLayout.cs(2,17): Error CS0234: The type or namespace name 'SharePoint' does not exist in the namespace 'Microsoft' (are you missing an assembly reference?)
+2023-05-29T10:27:35.7885998Z C:\agent2\_work\7027\s\dv.isbank.ui\BaseLayout.cs(2,17): error CS0234: The type or namespace name 'SharePoint' does not exist in the namespace 'Microsoft' (are you missing an assembly reference?) [C:\agent2\_work\7027\s\dv.isbank.ui\DV.Isbank.UI.csproj]
+2023-05-29T10:27:35.7891432Z ##[error]dv.isbank.ui\BaseLayout.cs(3,17): Error CS0234: The type or namespace name 'SharePoint' does not exist in the namespace 'Microsoft' (are you missing an assembly reference?)
+2023-05-29T10:27:35.7893973Z C:\agent2\_work\7027\s\dv.isbank.ui\BaseLayout.cs(3,17): error CS0234: The type or namespace name 'SharePoint' does not exist in the namespace 'Microsoft' (are you missing an assembly reference?) [C:\agent2\_work\7027\s\dv.isbank.ui\DV.Isbank.UI.csproj]
+2023-05-29T10:27:35.7899326Z ##[error]dv.isbank.ui\BaseMaster.cs(1,17): Error CS0234: The type or namespace name 'SharePoint' does not exist in the namespace 'Microsoft' (are you missing an assembly reference?)
+2023-05-29T10:27:35.7901871Z C:\agent2\_work\7027\s\dv.isbank.ui\BaseMaster.cs(1,17): error CS0234: The type or namespace name 'SharePoint' does not exist in the namespace 'Microsoft' (are you missing an assembly reference?) [C:\agent2\_work\7027\s\dv.isbank.ui\DV.Isbank.UI.csproj]
+2023-05-29T10:27:35.7907251Z ##[error]dv.isbank.ui\BaseLayout.cs(9,31): Error CS0246: The type or namespace name 'PublishingLayoutPage' could not be found (are you missing a using directive or an assembly reference?)
+2023-05-29T10:27:35.7909738Z C:\agent2\_work\7027\s\dv.isbank.ui\BaseLayout.cs(9,31): error CS0246: The type or namespace name 'PublishingLayoutPage' could not be found (are you missing a using directive or an assembly reference?) [C:\agent2\_work\7027\s\dv.isbank.ui\DV.Isbank.UI.csproj]
+2023-05-29T10:27:35.7914709Z ##[error]dv.isbank.ui\BaseLayout.cs(56,44): Error CS0246: The type or namespace name 'SPSite' could not be found (are you missing a using directive or an assembly reference?)
+2023-05-29T10:27:35.7916964Z C:\agent2\_work\7027\s\dv.isbank.ui\BaseLayout.cs(56,44): error CS0246: The type or namespace name 'SPSite' could not be found (are you missing a using directive or an assembly reference?) [C:\agent2\_work\7027\s\dv.isbank.ui\DV.Isbank.UI.csproj]
+2023-05-29T10:27:35.7921395Z ##[error]dv.isbank.ui\BaseLayout.cs(17,33): Error CS0115: 'BaseLayout.OnPreInit(EventArgs)': no suitable method found to override
+2023-05-29T10:27:35.7923459Z C:\agent2\_work\7027\s\dv.isbank.ui\BaseLayout.cs(17,33): error CS0115: 'BaseLayout.OnPreInit(EventArgs)': no suitable method found to override [C:\agent2\_work\7027\s\dv.isbank.ui\DV.Isbank.UI.csproj]
+2023-05-29T10:27:35.7928063Z ##[error]dv.isbank.ui\BaseLayout.cs(39,33): Error CS0115: 'BaseLayout.OnLoad(EventArgs)': no suitable method found to override
+2023-05-29T10:27:35.7930154Z C:\agent2\_work\7027\s\dv.isbank.ui\BaseLayout.cs(39,33): error CS0115: 'BaseLayout.OnLoad(EventArgs)': no suitable method found to override [C:\agent2\_work\7027\s\dv.isbank.ui\DV.Isbank.UI.csproj]
+2023-05-29T10:27:35.8143281Z Done Building Project "C:\agent2\_work\7027\s\dv.isbank.ui\DV.Isbank.UI.csproj" (default targets) -- FAILED.
+2023-05-29T10:27:35.8237195Z Done Building Project "C:\agent2\_work\7027\s\dv.isbank.ui.sln" (default targets) -- FAILED.
+2023-05-29T10:27:35.8255506Z 
+2023-05-29T10:27:35.8256197Z Build FAILED.
+2023-05-29T10:27:35.8289396Z 
+2023-05-29T10:27:35.8300700Z "C:\agent2\_work\7027\s\dv.isbank.ui.sln" (default target) (1) ->
+2023-05-29T10:27:35.8301311Z "C:\agent2\_work\7027\s\dv.isbank.ui\DV.Isbank.UI.csproj" (default target) (2) ->
+2023-05-29T10:27:35.8301868Z (ResolveAssemblyReferences target) -> 
+2023-05-29T10:27:35.8303183Z   C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets(2182,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "Microsoft.SharePoint". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors. [C:\agent2\_work\7027\s\dv.isbank.ui\DV.Isbank.UI.csproj]
+2023-05-29T10:27:35.8305421Z   C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets(2182,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "Microsoft.SharePoint.Client.ServerRuntime". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors. [C:\agent2\_work\7027\s\dv.isbank.ui\DV.Isbank.UI.csproj]
+2023-05-29T10:27:35.8307690Z   C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets(2182,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "Microsoft.SharePoint.Publishing". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors. [C:\agent2\_work\7027\s\dv.isbank.ui\DV.Isbank.UI.csproj]
+2023-05-29T10:27:35.8308800Z 
+2023-05-29T10:27:35.8308938Z 
+2023-05-29T10:27:35.8309334Z "C:\agent2\_work\7027\s\dv.isbank.ui.sln" (default target) (1) ->
+2023-05-29T10:27:35.8309883Z "C:\agent2\_work\7027\s\dv.isbank.ui\DV.Isbank.UI.csproj" (default target) (2) ->
+2023-05-29T10:27:35.8310721Z (CoreCompile target) -> 
+2023-05-29T10:27:35.8311608Z   C:\agent2\_work\7027\s\dv.isbank.ui\BaseLayout.cs(1,17): error CS0234: The type or namespace name 'SharePoint' does not exist in the namespace 'Microsoft' (are you missing an assembly reference?) [C:\agent2\_work\7027\s\dv.isbank.ui\DV.Isbank.UI.csproj]
+2023-05-29T10:27:35.8313083Z   C:\agent2\_work\7027\s\dv.isbank.ui\BaseLayout.cs(2,17): error CS0234: The type or namespace name 'SharePoint' does not exist in the namespace 'Microsoft' (are you missing an assembly reference?) [C:\agent2\_work\7027\s\dv.isbank.ui\DV.Isbank.UI.csproj]
+2023-05-29T10:27:35.8314345Z   C:\agent2\_work\7027\s\dv.isbank.ui\BaseLayout.cs(3,17): error CS0234: The type or namespace name 'SharePoint' does not exist in the namespace 'Microsoft' (are you missing an assembly reference?) [C:\agent2\_work\7027\s\dv.isbank.ui\DV.Isbank.UI.csproj]
+2023-05-29T10:27:35.8315611Z   C:\agent2\_work\7027\s\dv.isbank.ui\BaseMaster.cs(1,17): error CS0234: The type or namespace name 'SharePoint' does not exist in the namespace 'Microsoft' (are you missing an assembly reference?) [C:\agent2\_work\7027\s\dv.isbank.ui\DV.Isbank.UI.csproj]
+2023-05-29T10:27:35.8316899Z   C:\agent2\_work\7027\s\dv.isbank.ui\BaseLayout.cs(9,31): error CS0246: The type or namespace name 'PublishingLayoutPage' could not be found (are you missing a using directive or an assembly reference?) [C:\agent2\_work\7027\s\dv.isbank.ui\DV.Isbank.UI.csproj]
+2023-05-29T10:27:35.8318174Z   C:\agent2\_work\7027\s\dv.isbank.ui\BaseLayout.cs(56,44): error CS0246: The type or namespace name 'SPSite' could not be found (are you missing a using directive or an assembly reference?) [C:\agent2\_work\7027\s\dv.isbank.ui\DV.Isbank.UI.csproj]
+2023-05-29T10:27:35.8319386Z   C:\agent2\_work\7027\s\dv.isbank.ui\BaseLayout.cs(17,33): error CS0115: 'BaseLayout.OnPreInit(EventArgs)': no suitable method found to override [C:\agent2\_work\7027\s\dv.isbank.ui\DV.Isbank.UI.csproj]
+2023-05-29T10:27:35.8320545Z   C:\agent2\_work\7027\s\dv.isbank.ui\BaseLayout.cs(39,33): error CS0115: 'BaseLayout.OnLoad(EventArgs)': no suitable method found to override [C:\agent2\_work\7027\s\dv.isbank.ui\DV.Isbank.UI.csproj]
+2023-05-29T10:27:35.8321133Z 
+2023-05-29T10:27:35.8321419Z     3 Warning(s)
+2023-05-29T10:27:35.8321744Z     8 Error(s)
+2023-05-29T10:27:35.8321904Z 
+2023-05-29T10:27:35.8322230Z Time Elapsed 00:00:01.94
+2023-05-29T10:27:36.0480373Z ##[error]Process 'msbuild.exe' exited with code '1'.
+2023-05-29T10:27:36.1298595Z ##[section]Finishing: Build solution

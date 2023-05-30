@@ -1,0 +1,126 @@
+2023-05-25T07:42:35.5919068Z ##[section]Starting: NuGetCommand
+2023-05-25T07:42:35.6430913Z ==============================================================================
+2023-05-25T07:42:35.6431354Z Task         : NuGet
+2023-05-25T07:42:35.6432045Z Description  : Restore, pack, or push NuGet packages, or run a NuGet command. Supports NuGet.org and authenticated feeds like Azure Artifacts and MyGet. Uses NuGet.exe and works with .NET Framework apps. For .NET Core and .NET Standard apps, use the .NET Core task.
+2023-05-25T07:42:35.6432870Z Version      : 2.179.0
+2023-05-25T07:42:35.6433209Z Author       : Microsoft Corporation
+2023-05-25T07:42:35.6433770Z Help         : https://docs.microsoft.com/azure/devops/pipelines/tasks/package/nuget
+2023-05-25T07:42:35.6434550Z ==============================================================================
+2023-05-25T07:42:36.7462881Z [command]"C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/MSBuild/Current/Bin/msbuild.exe" /version /nologo
+2023-05-25T07:42:36.9395181Z [command]"C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/MSBuild/Current/Bin/msbuild.exe" /version /nologo
+2023-05-25T07:42:37.1228686Z Found tool in cache: NuGet 5.8.0 x64
+2023-05-25T07:42:37.1241657Z Found tool in cache: NuGet 5.8.0 x64
+2023-05-25T07:42:37.1314777Z Resolved from tool cache: 5.8.0
+2023-05-25T07:42:37.1315191Z Using version: 5.8.0
+2023-05-25T07:42:37.1320353Z Found tool in cache: NuGet 5.8.0 x64
+2023-05-25T07:42:37.2401901Z [command]C:\Windows\system32\chcp.com 65001
+2023-05-25T07:42:37.2402378Z Active code page: 65001
+2023-05-25T07:42:51.5082320Z Detected NuGet version 5.8.0.6930 / 5.8.0+830c8be45dbbccd411ecf6080abff0c2c98079cf.830c8be45dbbccd411ecf6080abff0c2c98079cf
+2023-05-25T07:42:51.5103484Z SYSTEMVSSCONNECTION exists true
+2023-05-25T07:42:51.5178975Z [command]C:\agent3\_work\_tool\NuGet\5.8.0\x64\nuget.exe restore C:\agent3\_work\4577\s\Backoffice\Accounting\Wise.BackOffice.Accounting.sln -Verbosity Detailed -NonInteractive -ConfigFile C:\Users\TFSServiceScore\AppData\Roaming\NuGet\nuget.config
+2023-05-25T07:42:56.9979813Z NuGet Version: 5.8.0.6930
+2023-05-25T07:42:56.9980905Z MSBuild auto-detection: using msbuild version '16.9.2.26201' from 'C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\bin'. Use option -MSBuildVersion to force nuget to use a specific version of MSBuild.
+2023-05-25T07:42:56.9981796Z MSBuild P2P timeout [ms]: 120000
+2023-05-25T07:42:56.9983615Z C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\bin\msbuild.exe "C:\Users\TfsServiceScore\AppData\Local\Temp\NuGetScratch\21noh33p.4uf.nugetinputs.targets" /t:GenerateRestoreGraphFile /nologo /nr:false /v:q /p:NuGetRestoreTargets="C:\Users\TfsServiceScore\AppData\Local\Temp\NuGetScratch\3dlz2adu.vcb.nugetrestore.targets" /p:RestoreUseCustomAfterTargets="True" /p:RestoreTaskAssemblyFile="C:\agent3\_work\_tool\NuGet\5.8.0\x64\nuget.exe" /p:RestoreSolutionDirectory="C:\agent3\_work\4577\s\Backoffice\Accounting\\" /p:RestoreConfigFile="C:\Users\TFSServiceScore\AppData\Roaming\NuGet\nuget.config" /p:SolutionDir="C:\agent3\_work\4577\s\Backoffice\Accounting\\" /p:SolutionName="Wise.BackOffice.Accounting"
+2023-05-25T07:42:56.9986245Z 
+2023-05-25T07:42:56.9986775Z Nothing to do. None of the projects in this solution specify any packages for NuGet to restore.
+2023-05-25T07:42:57.0033297Z [command]C:\agent3\_work\_tool\NuGet\5.8.0\x64\nuget.exe restore C:\agent3\_work\4577\s\Backoffice\Campaign\Wise.Backoffice.Campaign.sln -Verbosity Detailed -NonInteractive -ConfigFile C:\Users\TFSServiceScore\AppData\Roaming\NuGet\nuget.config
+2023-05-25T07:43:00.7129529Z NuGet Version: 5.8.0.6930
+2023-05-25T07:43:00.7131133Z MSBuild auto-detection: using msbuild version '16.9.2.26201' from 'C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\bin'. Use option -MSBuildVersion to force nuget to use a specific version of MSBuild.
+2023-05-25T07:43:00.7132676Z WARNING: Project file C:\agent3\_work\4577\s\Backoffice\Campaign\..\BankingIntegration\CMS\Banking.Integration.CMS.csproj cannot be found.
+2023-05-25T07:43:00.7137748Z MSBuild P2P timeout [ms]: 120000
+2023-05-25T07:43:00.7141047Z C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\bin\msbuild.exe "C:\Users\TfsServiceScore\AppData\Local\Temp\NuGetScratch\i4o54e5q.awm.nugetinputs.targets" /t:GenerateRestoreGraphFile /nologo /nr:false /v:q /p:NuGetRestoreTargets="C:\Users\TfsServiceScore\AppData\Local\Temp\NuGetScratch\b5uq3jkt.o1w.nugetrestore.targets" /p:RestoreUseCustomAfterTargets="True" /p:RestoreTaskAssemblyFile="C:\agent3\_work\_tool\NuGet\5.8.0\x64\nuget.exe" /p:RestoreSolutionDirectory="C:\agent3\_work\4577\s\Backoffice\Campaign\\" /p:RestoreConfigFile="C:\Users\TFSServiceScore\AppData\Roaming\NuGet\nuget.config" /p:SolutionDir="C:\agent3\_work\4577\s\Backoffice\Campaign\\" /p:SolutionName="Wise.Backoffice.Campaign"
+2023-05-25T07:43:00.7143449Z 
+2023-05-25T07:43:00.7144194Z Nothing to do. None of the projects in this solution specify any packages for NuGet to restore.
+2023-05-25T07:43:00.7190167Z [command]C:\agent3\_work\_tool\NuGet\5.8.0\x64\nuget.exe restore C:\agent3\_work\4577\s\Backoffice\Card\Wise.BackOffice.Card.sln -Verbosity Detailed -NonInteractive -ConfigFile C:\Users\TFSServiceScore\AppData\Roaming\NuGet\nuget.config
+2023-05-25T07:43:03.4922780Z NuGet Version: 5.8.0.6930
+2023-05-25T07:43:03.4923859Z MSBuild auto-detection: using msbuild version '16.9.2.26201' from 'C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\bin'. Use option -MSBuildVersion to force nuget to use a specific version of MSBuild.
+2023-05-25T07:43:03.4924684Z MSBuild P2P timeout [ms]: 120000
+2023-05-25T07:43:03.4926609Z C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\bin\msbuild.exe "C:\Users\TfsServiceScore\AppData\Local\Temp\NuGetScratch\5zqpxnve.3ys.nugetinputs.targets" /t:GenerateRestoreGraphFile /nologo /nr:false /v:q /p:NuGetRestoreTargets="C:\Users\TfsServiceScore\AppData\Local\Temp\NuGetScratch\g3uddmte.3oc.nugetrestore.targets" /p:RestoreUseCustomAfterTargets="True" /p:RestoreTaskAssemblyFile="C:\agent3\_work\_tool\NuGet\5.8.0\x64\nuget.exe" /p:RestoreSolutionDirectory="C:\agent3\_work\4577\s\Backoffice\Card\\" /p:RestoreConfigFile="C:\Users\TFSServiceScore\AppData\Roaming\NuGet\nuget.config" /p:SolutionDir="C:\agent3\_work\4577\s\Backoffice\Card\\" /p:SolutionName="Wise.BackOffice.Card"
+2023-05-25T07:43:03.4928259Z 
+2023-05-25T07:43:03.4928722Z Nothing to do. None of the projects in this solution specify any packages for NuGet to restore.
+2023-05-25T07:43:03.4951263Z [command]C:\agent3\_work\_tool\NuGet\5.8.0\x64\nuget.exe restore C:\agent3\_work\4577\s\Backoffice\Clearing\BKM\Clearing.BKM.sln -Verbosity Detailed -NonInteractive -ConfigFile C:\Users\TFSServiceScore\AppData\Roaming\NuGet\nuget.config
+2023-05-25T07:43:04.6363494Z NuGet Version: 5.8.0.6930
+2023-05-25T07:43:04.6365317Z MSBuild auto-detection: using msbuild version '16.9.2.26201' from 'C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\bin'. Use option -MSBuildVersion to force nuget to use a specific version of MSBuild.
+2023-05-25T07:43:04.6367412Z WARNING: Project file C:\agent3\_work\4577\s\Backoffice\Clearing\BKM\Clearing.BKM.UI.Acquirer\Clearing.BKM.UI.Acquirer.csproj cannot be found.
+2023-05-25T07:43:04.6368905Z WARNING: Project file C:\agent3\_work\4577\s\Backoffice\Clearing\BKM\Clearing.BKM.UI.Issuer\Clearing.BKM.UI.Issuer.csproj cannot be found.
+2023-05-25T07:43:04.6370167Z WARNING: Project file C:\agent3\_work\4577\s\Backoffice\Clearing\BKM\Clearing.BKM.UI.Fraud\Clearing.BKM.UI.Fraud.csproj cannot be found.
+2023-05-25T07:43:04.6371522Z WARNING: Project file C:\agent3\_work\4577\s\Backoffice\Clearing\BKM\Clearing.BKM.UI.Incoming\Clearing.BKM.UI.Incoming.csproj cannot be found.
+2023-05-25T07:43:04.6372387Z WARNING: Project file C:\agent3\_work\4577\s\Backoffice\Clearing\BKM\Clearing.BKM.UI.Fee\Clearing.BKM.UI.Fee.csproj cannot be found.
+2023-05-25T07:43:04.6373171Z WARNING: Project file C:\agent3\_work\4577\s\Backoffice\Clearing\BKM\Clearing.BKM.UI.Document\Clearing.BKM.UI.Document.csproj cannot be found.
+2023-05-25T07:43:04.6375627Z WARNING: Project file C:\agent3\_work\4577\s\Backoffice\Clearing\BKM\Clearing.BKM.UI.Outgoing\Clearing.BKM.UI.Outgoing.csproj cannot be found.
+2023-05-25T07:43:04.6377116Z WARNING: Project file C:\agent3\_work\4577\s\Backoffice\Clearing\BKM\Clearing.BKM.UI.MBkmVeri\Clearing.BKM.UI.MBkmVeri.csproj cannot be found.
+2023-05-25T07:43:04.6378373Z WARNING: Project file C:\agent3\_work\4577\s\Backoffice\Clearing\BKM\Clearing.BKM.Web cannot be found.
+2023-05-25T07:43:04.6379198Z WARNING: Project file C:\agent3\_work\4577\s\Backoffice\Clearing\BKM\Clearing.BKM.WebInt\Clearing.BKM.WebInt.csproj cannot be found.
+2023-05-25T07:43:04.6380379Z WARNING: Project file C:\agent3\_work\4577\s\Backoffice\Clearing\BKM\Clearing.BKM.Business\Clearing.BKM.Business.csproj cannot be found.
+2023-05-25T07:43:04.6381569Z WARNING: Project file C:\agent3\_work\4577\s\Backoffice\Clearing\BKM\Clearing.BKM.UI.Debit\Clearing.BKM.UI.Debit.csproj cannot be found.
+2023-05-25T07:43:04.6382304Z Nothing to do. None of the projects in this solution specify any packages for NuGet to restore.
+2023-05-25T07:43:04.6395984Z [command]C:\agent3\_work\_tool\NuGet\5.8.0\x64\nuget.exe restore C:\agent3\_work\4577\s\Backoffice\Clearing\Common\Clearing.Common.sln -Verbosity Detailed -NonInteractive -ConfigFile C:\Users\TFSServiceScore\AppData\Roaming\NuGet\nuget.config
+2023-05-25T07:43:06.0596580Z NuGet Version: 5.8.0.6930
+2023-05-25T07:43:06.0597605Z MSBuild auto-detection: using msbuild version '16.9.2.26201' from 'C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\bin'. Use option -MSBuildVersion to force nuget to use a specific version of MSBuild.
+2023-05-25T07:43:06.0598639Z WARNING: Project file C:\agent3\_work\4577\s\Backoffice\Clearing\Common\Clearing.Common.UI.BitDesc\Clearing.Common.UI.BitDesc.csproj cannot be found.
+2023-05-25T07:43:06.0600012Z WARNING: Project file C:\agent3\_work\4577\s\Backoffice\Clearing\Common\Clearing.Common.UI.Matching\Clearing.Common.UI.Matching.csproj cannot be found.
+2023-05-25T07:43:06.0601104Z WARNING: Project file C:\agent3\_work\4577\s\Backoffice\Clearing\Common\Clearing.Common.UI.FollowUp\Clearing.Common.UI.FollowUp.csproj cannot be found.
+2023-05-25T07:43:06.0602063Z WARNING: Project file C:\agent3\_work\4577\s\Backoffice\Clearing\Common\Clearing.Common.UI.Dispute\Clearing.Common.UI.Dispute.csproj cannot be found.
+2023-05-25T07:43:06.0603302Z WARNING: Project file C:\agent3\_work\4577\s\Backoffice\Clearing\Common\Clearing.Common.UI.Common\Clearing.Common.UI.Common.csproj cannot be found.
+2023-05-25T07:43:06.0604385Z WARNING: Project file C:\agent3\_work\4577\s\Backoffice\Clearing\Common\Clearing.Common.Business\Clearing.Common.Business.csproj cannot be found.
+2023-05-25T07:43:06.0605397Z WARNING: Project file C:\agent3\_work\4577\s\Backoffice\Clearing\Common\Clearing.Common.WebInt\Clearing.Common.WebInt.csproj cannot be found.
+2023-05-25T07:43:06.0606422Z WARNING: Project file C:\agent3\_work\4577\s\Backoffice\Clearing\Common\Clearing.Common.Business.Pom\Clearing.Common.Business.Pom.csproj cannot be found.
+2023-05-25T07:43:06.0607420Z WARNING: Project file C:\agent3\_work\4577\s\Backoffice\Clearing\Common\Clearing.Common.Web cannot be found.
+2023-05-25T07:43:06.0608312Z WARNING: Project file C:\agent3\_work\4577\s\Backoffice\Clearing\Common\..\Smartway.Ocean.Clearing.Util\ClearingUtil\Clearing.Util.csproj cannot be found.
+2023-05-25T07:43:06.0609422Z WARNING: Project file C:\agent3\_work\4577\s\Backoffice\Clearing\Common\..\Smartway.Ocean.Clearing.Util\ClearingUtilWeb\Clearing.UtilWeb.csproj cannot be found.
+2023-05-25T07:43:06.0610251Z Nothing to do. None of the projects in this solution specify any packages for NuGet to restore.
+2023-05-25T07:43:06.0627185Z [command]C:\agent3\_work\_tool\NuGet\5.8.0\x64\nuget.exe restore C:\agent3\_work\4577\s\Backoffice\Clearing\Mastercard\Clearing.Mastercard.sln -Verbosity Detailed -NonInteractive -ConfigFile C:\Users\TFSServiceScore\AppData\Roaming\NuGet\nuget.config
+2023-05-25T07:43:07.1484087Z NuGet Version: 5.8.0.6930
+2023-05-25T07:43:07.1485162Z MSBuild auto-detection: using msbuild version '16.9.2.26201' from 'C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\bin'. Use option -MSBuildVersion to force nuget to use a specific version of MSBuild.
+2023-05-25T07:43:07.1486267Z WARNING: Project file C:\agent3\_work\4577\s\Backoffice\Clearing\Mastercard\Clearing.Mastercard.Business\Clearing.Mastercard.Business.csproj cannot be found.
+2023-05-25T07:43:07.1487230Z WARNING: Project file C:\agent3\_work\4577\s\Backoffice\Clearing\Mastercard\Clearing.Mastercard.UI.Acquirer\Clearing.Mastercard.UI.Acquirer.csproj cannot be found.
+2023-05-25T07:43:07.1488153Z WARNING: Project file C:\agent3\_work\4577\s\Backoffice\Clearing\Mastercard\Clearing.Mastercard.UI.Document\Clearing.Mastercard.UI.Document.csproj cannot be found.
+2023-05-25T07:43:07.1489017Z WARNING: Project file C:\agent3\_work\4577\s\Backoffice\Clearing\Mastercard\Clearing.Mastercard.UI.Fee\Clearing.Mastercard.UI.Fee.csproj cannot be found.
+2023-05-25T07:43:07.1489904Z WARNING: Project file C:\agent3\_work\4577\s\Backoffice\Clearing\Mastercard\Clearing.Mastercard.UI.Incoming\Clearing.Mastercard.UI.Incoming.csproj cannot be found.
+2023-05-25T07:43:07.1491117Z WARNING: Project file C:\agent3\_work\4577\s\Backoffice\Clearing\Mastercard\Clearing.Mastercard.UI.Issuer\Clearing.Mastercard.UI.Issuer.csproj cannot be found.
+2023-05-25T07:43:07.1491977Z WARNING: Project file C:\agent3\_work\4577\s\Backoffice\Clearing\Mastercard\Clearing.Mastercard.UI.Outgoing\Clearing.Mastercard.UI.Outgoing.csproj cannot be found.
+2023-05-25T07:43:07.1492855Z WARNING: Project file C:\agent3\_work\4577\s\Backoffice\Clearing\Mastercard\Clearing.Mastercard.UI.Safe\Clearing.Mastercard.UI.Safe.csproj cannot be found.
+2023-05-25T07:43:07.1493707Z WARNING: Project file C:\agent3\_work\4577\s\Backoffice\Clearing\Mastercard\Clearing.Mastercard.WebInt\Clearing.Mastercard.WebInt.csproj cannot be found.
+2023-05-25T07:43:07.1494495Z WARNING: Project file C:\agent3\_work\4577\s\Backoffice\Clearing\Mastercard\Clearing.Mastercard.Web cannot be found.
+2023-05-25T07:43:07.1495160Z Nothing to do. None of the projects in this solution specify any packages for NuGet to restore.
+2023-05-25T07:43:07.1521048Z [command]C:\agent3\_work\_tool\NuGet\5.8.0\x64\nuget.exe restore C:\agent3\_work\4577\s\Backoffice\Clearing\Util\ClearingUtil.sln -Verbosity Detailed -NonInteractive -ConfigFile C:\Users\TFSServiceScore\AppData\Roaming\NuGet\nuget.config
+2023-05-25T07:43:08.2070796Z NuGet Version: 5.8.0.6930
+2023-05-25T07:43:08.2072374Z MSBuild auto-detection: using msbuild version '16.9.2.26201' from 'C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\bin'. Use option -MSBuildVersion to force nuget to use a specific version of MSBuild.
+2023-05-25T07:43:08.2073880Z WARNING: Project file C:\agent3\_work\4577\s\Backoffice\Clearing\Util\ClearingUtil\Clearing.Util.csproj cannot be found.
+2023-05-25T07:43:08.2075182Z WARNING: Project file C:\agent3\_work\4577\s\Backoffice\Clearing\Util\ClearingUtilWeb\Clearing.UtilWeb.csproj cannot be found.
+2023-05-25T07:43:08.2075957Z WARNING: Project file C:\agent3\_work\4577\s\Backoffice\Clearing\Util\WordGenerator\Clearing.WordGenerator.csproj cannot be found.
+2023-05-25T07:43:08.2076675Z Nothing to do. None of the projects in this solution specify any packages for NuGet to restore.
+2023-05-25T07:43:08.2107921Z [command]C:\agent3\_work\_tool\NuGet\5.8.0\x64\nuget.exe restore C:\agent3\_work\4577\s\Backoffice\Clearing\Util\PDF2PlainText\contrib\vstudio\vc8\PDF2PlainText.sln -Verbosity Detailed -NonInteractive -ConfigFile C:\Users\TFSServiceScore\AppData\Roaming\NuGet\nuget.config
+2023-05-25T07:43:09.3307943Z NuGet Version: 5.8.0.6930
+2023-05-25T07:43:09.3308964Z MSBuild auto-detection: using msbuild version '16.9.2.26201' from 'C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\bin'. Use option -MSBuildVersion to force nuget to use a specific version of MSBuild.
+2023-05-25T07:43:09.3311380Z Error parsing solution file at C:\agent3\_work\4577\s\Backoffice\Clearing\Util\PDF2PlainText\contrib\vstudio\vc8\PDF2PlainText.sln: Exception has been thrown by the target of an invocation.  The project file "zlibvc.vcproj" is in the ".vcproj" file format, which MSBuild no longer supports. Please convert the project by opening it in the Visual Studio IDE or running the conversion tool, or use MSBuild 3.5 or earlier to build it.  C:\agent3\_work\4577\s\Backoffice\Clearing\Util\PDF2PlainText\contrib\vstudio\vc8\PDF2PlainText.sln
+2023-05-25T07:43:09.3314344Z NuGet.Commands.CommandException: Error parsing solution file at C:\agent3\_work\4577\s\Backoffice\Clearing\Util\PDF2PlainText\contrib\vstudio\vc8\PDF2PlainText.sln: Exception has been thrown by the target of an invocation.  The project file "zlibvc.vcproj" is in the ".vcproj" file format, which MSBuild no longer supports. Please convert the project by opening it in the Visual Studio IDE or running the conversion tool, or use MSBuild 3.5 or earlier to build it.  C:\agent3\_work\4577\s\Backoffice\Clearing\Util\PDF2PlainText\contrib\vstudio\vc8\PDF2PlainText.sln
+2023-05-25T07:43:09.3316408Z    at NuGet.CommandLine.MsBuildUtility.GetAllProjectFileNamesWithMsBuild(String solutionFile, String msbuildPath)
+2023-05-25T07:43:09.3317397Z    at NuGet.CommandLine.RestoreCommand.ProcessSolutionFile(String solutionFileFullPath, PackageRestoreInputs restoreInputs)
+2023-05-25T07:43:09.3318106Z    at NuGet.CommandLine.RestoreCommand.<DetermineRestoreInputsAsync>d__62.MoveNext()
+2023-05-25T07:43:09.3318779Z --- End of stack trace from previous location where exception was thrown ---
+2023-05-25T07:43:09.3319336Z    at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+2023-05-25T07:43:09.3320009Z    at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+2023-05-25T07:43:09.3320856Z    at NuGet.CommandLine.RestoreCommand.<ExecuteCommandAsync>d__52.MoveNext()
+2023-05-25T07:43:09.3321409Z --- End of stack trace from previous location where exception was thrown ---
+2023-05-25T07:43:09.3321939Z    at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+2023-05-25T07:43:09.3322519Z    at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+2023-05-25T07:43:09.3323134Z    at NuGet.CommandLine.Command.Execute()
+2023-05-25T07:43:09.3323727Z    at NuGet.CommandLine.Program.MainCore(String workingDirectory, String[] args)
+2023-05-25T07:43:09.4317909Z ##[error]The nuget command failed with exit code(1) and error(Error parsing solution file at C:\agent3\_work\4577\s\Backoffice\Clearing\Util\PDF2PlainText\contrib\vstudio\vc8\PDF2PlainText.sln: Exception has been thrown by the target of an invocation.  The project file "zlibvc.vcproj" is in the ".vcproj" file format, which MSBuild no longer supports. Please convert the project by opening it in the Visual Studio IDE or running the conversion tool, or use MSBuild 3.5 or earlier to build it.  C:\agent3\_work\4577\s\Backoffice\Clearing\Util\PDF2PlainText\contrib\vstudio\vc8\PDF2PlainText.sln
+NuGet.Commands.CommandException: Error parsing solution file at C:\agent3\_work\4577\s\Backoffice\Clearing\Util\PDF2PlainText\contrib\vstudio\vc8\PDF2PlainText.sln: Exception has been thrown by the target of an invocation.  The project file "zlibvc.vcproj" is in the ".vcproj" file format, which MSBuild no longer supports. Please convert the project by opening it in the Visual Studio IDE or running the conversion tool, or use MSBuild 3.5 or earlier to build it.  C:\agent3\_work\4577\s\Backoffice\Clearing\Util\PDF2PlainText\contrib\vstudio\vc8\PDF2PlainText.sln
+   at NuGet.CommandLine.MsBuildUtility.GetAllProjectFileNamesWithMsBuild(String solutionFile, String msbuildPath)
+   at NuGet.CommandLine.RestoreCommand.ProcessSolutionFile(String solutionFileFullPath, PackageRestoreInputs restoreInputs)
+   at NuGet.CommandLine.RestoreCommand.<DetermineRestoreInputsAsync>d__62.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NuGet.CommandLine.RestoreCommand.<ExecuteCommandAsync>d__52.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NuGet.CommandLine.Command.Execute()
+   at NuGet.CommandLine.Program.MainCore(String workingDirectory, String[] args))
+2023-05-25T07:43:09.4336206Z ##[error]Packages failed to restore
+2023-05-25T07:43:09.4361770Z ##[section]Finishing: NuGetCommand
