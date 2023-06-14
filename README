@@ -1,1 +1,5 @@
 
+OPENAI_API_BASE=https://openai001deneme.openai.azure.com/
+OPENAI_API_KEY=5ca034af20784c4d9f9dd357b640e6c7
+OPENAI_API_TYPE=azure
+OPENAI_API_VERSION=2022-12-01
