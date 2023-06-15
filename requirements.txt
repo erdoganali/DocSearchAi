@@ -1,6 +1,10 @@
-pip install dotenv==0.0.5
-pip install langchain==0.0.184
-pip install helper==2.5.0
-pip install chromadb
-pip install openai
-pip install colorama==0.4.4
+python-dotenv
+langchain==0.0.184
+helper==2.5.0
+chromadb==0.3.26
+openai
+colorama==0.4.4
+fastapi[all]==0.86.0
+uvicorn[standard]==0.18.3
+ 
+ 
