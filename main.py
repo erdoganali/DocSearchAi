@@ -21,7 +21,25 @@ openai.api_version = os.environ.get("OPENAI_API_VERSION")
 
 app = FastAPI()
 
-# yardımcı fonksiyonlar PrintGreen ve PrintPurple oluşturma:
+def get_file_list():
+    file_list = []
+    for filename in os.listdir("upload"):
+        if filename.endswith(".txt"):
+            file_list.append(os.path.join("upload", filename))
+    return file_list
+
+def combine_files():
+    files = get_file_list()
+    documents = []
+    for filename in files:
+        with open(filename, "rb") as f:
+            document = f.read().decode("utf-8")
+            documents.append(document)
+    combined_document = " ".join(documents)
+    with open("saved/combined_document.txt", "w", encoding="utf-8") as f:
+        f.write(combined_document)
+
+combine_files()
 
 def printGreen(text):
     print(Fore.GREEN + text + Style.RESET_ALL)
@@ -29,36 +47,25 @@ def printGreen(text):
 def printPurple(text):
     print(Fore.MAGENTA + text + Style.RESET_ALL)
 
-@app.post("/uploadfile/")
-async def create_upload_file(file: UploadFile):
-    file_path = f"upload/{file.filename}"
-    with open(file_path, "wb") as buffer:
-        buffer.write(await file.read())
-
-    # 'txt' dosyasından belgeleri yükleme
-    loader = TextLoader(file_path, encoding='utf-8')
-    documents = loader.load()
-
-    # Belge parçaları halinde ayırma ve gömme oluşturma
-    text_splitter = CharacterTextSplitter(chunk_size=1000, chunk_overlap=0)
-    texts = text_splitter.split_documents(documents)
-    embeddings = OpenAIEmbeddings(model="text-embedding-ada-002", chunk_size=1)
-
-    # Chroma vektör deposunu kullanarak belgeleri sıralama
-    vectorstore_db = Chroma.from_documents(texts, embeddings)
-    retriever = vectorstore_db.as_retriever()
-
-    azure_llm = AzureOpenAI(deployment_name="Davinci-003", model_name="text-davinci-003", temperature=0)
-    qa = RetrievalQA.from_chain_type(azure_llm, chain_type="stuff", retriever=retriever)
+@app.post("/uploadfiles/")
+async def create_upload_files(files: List[UploadFile]):
+    filenames = []
+    for file in files:
+        file_path = f"upload/{file.filename}"
+        with open(file_path, "wb") as buffer:
+            buffer.write(await file.read())
+        filenames.append(file_path)
 
     response = {
         "status": "ok",
-        "filename": file.filename
+        "filenames": filenames
     }
     return JSONResponse(content=response)
 
-@app.get("/qa")
-async def qa_endpoint(query: str, file: UploadFile = File(...)):
+
+
+@app.post("/qa")
+async def qa_endpoint(query: str):
     query = query.strip()
     if not query:
         return JSONResponse(content={
@@ -66,13 +73,9 @@ async def qa_endpoint(query: str, file: UploadFile = File(...)):
             "message": "Sorgu boş olamaz."
         })
 
-    file_path = f"upload/{file.filename}"
-    with open(file_path, "wb") as buffer:
-        buffer.write(await file.read())
-
-    # 'txt' dosyasından belgeleri yükleme
-    loader = TextLoader(file_path, encoding='utf-8')
-    documents = loader.load()
+    # Belgeleri yükleme
+    document_loader = TextLoader("saved/combined_document.txt", encoding='utf-8')
+    documents = document_loader.load()
 
     # Belge parçaları halinde ayırma ve gömme oluşturma
     text_splitter = CharacterTextSplitter(chunk_size=1000, chunk_overlap=0)
@@ -88,11 +91,9 @@ async def qa_endpoint(query: str, file: UploadFile = File(...)):
 
     printGreen(f"Soru: {query}")
     answer = qa.run(query)
-    printPurple(f"Cevap: {answer}")
 
     return JSONResponse(content={
         "status": "ok",
         "query": query,
         "answer": answer
     })
-
